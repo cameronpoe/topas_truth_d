@@ -8,3 +8,8 @@
 - peruse literature to compare imaging results
 - define interfaces
 - understand code
+
+week of 6/13 goals
+- understand code
+- run code with phantom
+- zernike game plan
