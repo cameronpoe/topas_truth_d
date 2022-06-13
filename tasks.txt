@@ -1,0 +1,10 @@
+- complete materials with refs!!!
+- troubleshoot topas (unable to add sources to certain mats)
+    - check for existence of mats in amide
+- zernike
+    - find base distribution
+    - subtract!
+- discuss w k: does time dependency change anything?
+- peruse literature to compare imaging results
+- define interfaces
+- understand code
