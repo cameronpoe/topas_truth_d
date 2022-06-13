@@ -1,0 +1,692 @@
+# XCAT Material Definitions
+# (any spaces in material name from XCAT log file are replaced with underscores)
+
+# Temporarily, all are actually water, just with different colors
+
+sv:Ma/XCAT_Air/Components 			= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Air/Fractions  			= 2 0.111894 0.888106
+d:Ma/XCAT_Air/Density 				= 1.0 g/cm3
+s:Ma/XCAT_Air/DefaultColor 			= "TransparentBlack"
+iv:Gr/Color/TransparentBlack = 4 0 0 0 0
+
+#ADDED MANUALLY new - 5.25.22
+sv:Ma/XCAT_skin_activity/Components 		= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_skin_activity/Fractions  		= 2 0.111894 0.888106
+d:Ma/XCAT_skin_activity/Density 		= 1.0 g/cm3
+s:Ma/XCAT_skin_activity/DefaultColor 		= "TransparentBlack"
+
+sv:Ma/XCAT_yellow_bone_marrow_activity/Components 			= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_yellow_bone_marrow_activity/Fractions  			= 2 0.111894 0.888106
+d:Ma/XCAT_yellow_bone_marrow_activity/Density 			= 1.0 g/cm3
+s:Ma/XCAT_yellow_bone_marrow_activity/DefaultColor 			= "orange"
+
+sv:Ma/XCAT_penis_activity/Components 		= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_penis_activity/Fractions  		= 2 0.111894 0.888106
+d:Ma/XCAT_penis_activity/Density 		= 1.0 g/cm3
+s:Ma/XCAT_penis_activity/DefaultColor 		= "yellow"
+
+sv:Ma/XCAT_coronary_art_activity/Components 			= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_coronary_art_activity/Fractions  			= 2 0.111894 0.888106
+d:Ma/XCAT_coronary_art_activity/Density 			= 1.0 g/cm3
+s:Ma/XCAT_coronary_art_activity/DefaultColor 			= "skyblue"
+
+sv:Ma/XCAT_coronary_vein_activity/Components 		= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_coronary_vein_activity/Fractions  		= 2 0.111894 0.888106
+d:Ma/XCAT_coronary_vein_activity/Density 			= 1.0 g/cm3
+s:Ma/XCAT_coronary_vein_activity/DefaultColor 		= "red"
+
+sv:Ma/XCAT_larynx_activity/Components 		= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_larynx_activity/Fractions  		= 2 0.111894 0.888106
+d:Ma/XCAT_larynx_activity/Density 			= 1.0 g/cm3
+s:Ma/XCAT_larynx_activity/DefaultColor 		= "black"
+
+#sv:Ma/XCAT_Blood/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Blood/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Blood/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Blood/DefaultColor 			= "blue"
+
+#sv:Ma/XCAT_Heart/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Heart/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Heart/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Heart/DefaultColor 			= "red"
+
+#sv:Ma/XCAT_Kidney/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Kidney/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Kidney/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Kidney/DefaultColor 			= "red"
+
+#sv:Ma/XCAT_Liver/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Liver/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Liver/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Liver/DefaultColor 			= "red"
+
+#sv:Ma/XCAT_Lymph/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Lymph/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Lymph/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Lymph/DefaultColor 			= "green"
+
+#sv:Ma/XCAT_Pancreas/Components 		= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Pancreas/Fractions  		= 2 0.111894 0.888106
+#d:Ma/XCAT_Pancreas/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Pancreas/DefaultColor 		= "red"
+
+#sv:Ma/XCAT_Spleen/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Spleen/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Spleen/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Spleen/DefaultColor 			= "red"
+
+#sv:Ma/XCAT_Intestine/Components 		= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Intestine/Fractions  		= 2 0.111894 0.888106
+#d:Ma/XCAT_Intestine/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Intestine/DefaultColor 		= "yellow"
+
+#sv:Ma/XCAT_Skull/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Skull/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Skull/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Skull/DefaultColor 			= "grey"
+
+#sv:Ma/XCAT_Cartilage/Components 		= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Cartilage/Fractions  		= 2 0.111894 0.888106
+#d:Ma/XCAT_Cartilage/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Cartilage/DefaultColor 		= "grey"
+
+#sv:Ma/XCAT_Brain/Components 			= 2 "Hydrogen" "Oxygen"
+#uv:Ma/XCAT_Brain/Fractions  			= 2 0.111894 0.888106
+#d:Ma/XCAT_Brain/Density 			= 1.0 g/cm3
+#s:Ma/XCAT_Brain/DefaultColor 			= "grey"
+
+#ADDITIONS BEGIN HERE
+
+sv:Ma/XCAT_myoLV_act/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_myoLV_act/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_myoLV_act/Density         = 1.0 g/cm3
+s:Ma/XCAT_myoLV_act/DefaultColor        = "White"
+
+sv:Ma/XCAT_myoRV_act/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_myoRV_act/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_myoRV_act/Density         = 1.0 g/cm3
+s:Ma/XCAT_myoRV_act/DefaultColor        = "White"
+
+sv:Ma/XCAT_myoLA_act/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_myoLA_act/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_myoLA_act/Density         = 1.0 g/cm3
+s:Ma/XCAT_myoLA_act/DefaultColor        = "White"
+
+sv:Ma/XCAT_myoRA_act/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_myoRA_act/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_myoRA_act/Density         = 1.0 g/cm3
+s:Ma/XCAT_myoRA_act/DefaultColor        = "White"
+
+sv:Ma/XCAT_bldplLV_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_bldplLV_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_bldplLV_act/Density       = 1.0 g/cm3
+#s:Ma/XCAT_bldplLV_act/DefaultColor      = "White"
+s:Ma/XCAT_bldplLV_act/DefaultColor                      = "TransparentBlack"
+
+sv:Ma/XCAT_bldplRV_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_bldplRV_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_bldplRV_act/Density       = 1.0 g/cm3
+#s:Ma/XCAT_bldplRV_act/DefaultColor      = "White"
+s:Ma/XCAT_bldplRV_act/DefaultColor                      = "TransparentBlack"
+
+sv:Ma/XCAT_bldplLA_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_bldplLA_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_bldplLA_act/Density       = 1.0 g/cm3
+#s:Ma/XCAT_bldplLA_act/DefaultColor      = "White"
+s:Ma/XCAT_bldplLA_act/DefaultColor                      = "TransparentBlack"
+
+sv:Ma/XCAT_bldplRA_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_bldplRA_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_bldplRA_act/Density       = 1.0 g/cm3
+#s:Ma/XCAT_bldplRA_act/DefaultColor      = "Grey"
+s:Ma/XCAT_bldplRA_act/DefaultColor                      = "TransparentBlack"
+
+sv:Ma/XCAT_body_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_body_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_body_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_body_activity/DefaultColor        = "TransparentBlack"
+
+sv:Ma/XCAT_muscle_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_muscle_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_muscle_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_muscle_activity/DefaultColor      = "TransparentBlack"
+
+sv:Ma/XCAT_brain_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_brain_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_brain_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_brain_activity/DefaultColor       = "Grey"
+
+sv:Ma/XCAT_sinus_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_sinus_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_sinus_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_sinus_activity/DefaultColor       = "Grey"
+
+sv:Ma/XCAT_liver_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_liver_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_liver_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_liver_activity/DefaultColor       = "Grey"
+
+sv:Ma/XCAT_gall_bladder_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_gall_bladder_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_gall_bladder_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_gall_bladder_activity/DefaultColor        = "Grey"
+
+sv:Ma/XCAT_r_lung_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_r_lung_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_r_lung_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_r_lung_activity/DefaultColor      = "Red"
+
+sv:Ma/XCAT_l_lung_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_l_lung_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_l_lung_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_l_lung_activity/DefaultColor      = "Red"
+
+sv:Ma/XCAT_esophagus_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_esophagus_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_esophagus_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_esophagus_activity/DefaultColor       = "Red"
+
+sv:Ma/XCAT_laryngopharynx_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_laryngopharynx_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_laryngopharynx_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_laryngopharynx_activity/DefaultColor      = "Red"
+
+sv:Ma/XCAT_st_wall_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_st_wall_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_st_wall_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_st_wall_activity/DefaultColor         = "Red"
+
+sv:Ma/XCAT_st_cnts_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_st_cnts_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_st_cnts_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_st_cnts_activity/DefaultColor         = "Red"
+
+sv:Ma/XCAT_pancreas_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_pancreas_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_pancreas_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_pancreas_activity/DefaultColor        = "Maroon"
+
+sv:Ma/XCAT_r_kidney_cortex_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_r_kidney_cortex_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_r_kidney_cortex_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_r_kidney_cortex_activity/DefaultColor         = "Maroon"
+
+sv:Ma/XCAT_r_kidney_medulla_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_r_kidney_medulla_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_r_kidney_medulla_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_r_kidney_medulla_activity/DefaultColor        = "Maroon"
+
+sv:Ma/XCAT_l_kidney_cortex_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_l_kidney_cortex_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_l_kidney_cortex_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_l_kidney_cortex_activity/DefaultColor         = "Maroon"
+
+sv:Ma/XCAT_l_kidney_medulla_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_l_kidney_medulla_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_l_kidney_medulla_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_l_kidney_medulla_activity/DefaultColor        = "Maroon"
+
+sv:Ma/XCAT_adrenal_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_adrenal_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_adrenal_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_adrenal_activity/DefaultColor         = "Maroon"
+
+sv:Ma/XCAT_r_renal_pelvis_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_r_renal_pelvis_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_r_renal_pelvis_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_r_renal_pelvis_activity/DefaultColor      = "Maroon"
+
+sv:Ma/XCAT_l_renal_pelvis_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_l_renal_pelvis_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_l_renal_pelvis_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_l_renal_pelvis_activity/DefaultColor      = "Yellow"
+
+sv:Ma/XCAT_spleen_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_spleen_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_spleen_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_spleen_activity/DefaultColor      = "Yellow"
+
+sv:Ma/XCAT_rib_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_rib_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_rib_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_rib_activity/DefaultColor         = "Yellow"
+
+sv:Ma/XCAT_cortical_bone_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_cortical_bone_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_cortical_bone_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_cortical_bone_activity/DefaultColor       = "Yellow"
+
+sv:Ma/XCAT_spine_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_spine_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_spine_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_spine_activity/DefaultColor       = "Yellow"
+
+sv:Ma/XCAT_spinal_cord_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_spinal_cord_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_spinal_cord_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_spinal_cord_activity/DefaultColor         = "Yellow"
+
+sv:Ma/XCAT_bone_marrow_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_bone_marrow_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_bone_marrow_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_bone_marrow_activity/DefaultColor         = "Olive"
+
+sv:Ma/XCAT_art_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_art_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_art_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_art_activity/DefaultColor         = "Olive"
+
+sv:Ma/XCAT_vein_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_vein_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_vein_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_vein_activity/DefaultColor        = "Olive"
+
+sv:Ma/XCAT_bladder_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_bladder_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_bladder_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_bladder_activity/DefaultColor         = "Olive"
+
+sv:Ma/XCAT_prostate_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_prostate_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_prostate_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_prostate_activity/DefaultColor        = "Olive"
+
+sv:Ma/XCAT_asc_li_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_asc_li_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_asc_li_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_asc_li_activity/DefaultColor      = "Olive"
+
+sv:Ma/XCAT_trans_li_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_trans_li_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_trans_li_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_trans_li_activity/DefaultColor        = "Olive"
+
+sv:Ma/XCAT_desc_li_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_desc_li_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_desc_li_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_desc_li_activity/DefaultColor         = "Lime"
+
+sv:Ma/XCAT_sm_intest_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_sm_intest_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_sm_intest_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_sm_intest_activity/DefaultColor       = "Lime"
+
+sv:Ma/XCAT_rectum_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_rectum_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_rectum_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_rectum_activity/DefaultColor      = "Lime"
+
+sv:Ma/XCAT_sem_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_sem_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_sem_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_sem_activity/DefaultColor         = "Lime"
+
+sv:Ma/XCAT_vas_def_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_vas_def_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_vas_def_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_vas_def_activity/DefaultColor         = "Lime"
+
+sv:Ma/XCAT_test_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_test_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_test_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_test_activity/DefaultColor        = "Lime"
+
+sv:Ma/XCAT_epididymus_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_epididymus_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_epididymus_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_epididymus_activity/DefaultColor      = "Green"
+
+sv:Ma/XCAT_ejac_duct_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_ejac_duct_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_ejac_duct_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_ejac_duct_activity/DefaultColor       = "Green"
+
+sv:Ma/XCAT_pericardium_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_pericardium_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_pericardium_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_pericardium_activity/DefaultColor         = "Green"
+
+sv:Ma/XCAT_cartilage_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_cartilage_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_cartilage_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_cartilage_activity/DefaultColor       = "Green"
+
+sv:Ma/XCAT_intest_air_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_intest_air_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_intest_air_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_intest_air_activity/DefaultColor      = "Green"
+
+sv:Ma/XCAT_ureter_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_ureter_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_ureter_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_ureter_activity/DefaultColor      = "Green"
+
+sv:Ma/XCAT_urethra_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_urethra_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_urethra_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_urethra_activity/DefaultColor         = "Green"
+
+sv:Ma/XCAT_lymph_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_lymph_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_lymph_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_lymph_activity/DefaultColor       = "Aqua"
+
+sv:Ma/XCAT_lymph_abnormal_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_lymph_abnormal_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_lymph_abnormal_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_lymph_abnormal_activity/DefaultColor      = "Aqua"
+
+sv:Ma/XCAT_airway_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_airway_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_airway_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_airway_activity/DefaultColor      = "Aqua"
+
+sv:Ma/XCAT_uterus_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_uterus_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_uterus_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_uterus_activity/DefaultColor      = "Aqua"
+
+sv:Ma/XCAT_vagina_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_vagina_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_vagina_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_vagina_activity/DefaultColor      = "Aqua"
+
+sv:Ma/XCAT_right_ovary_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_right_ovary_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_right_ovary_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_right_ovary_activity/DefaultColor         = "Aqua"
+
+sv:Ma/XCAT_left_ovary_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_left_ovary_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_left_ovary_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_left_ovary_activity/DefaultColor      = "Teal"
+
+sv:Ma/XCAT_fallopian_tubes_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_fallopian_tubes_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_fallopian_tubes_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_fallopian_tubes_activity/DefaultColor         = "Teal"
+
+sv:Ma/XCAT_parathyroid_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_parathyroid_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_parathyroid_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_parathyroid_activity/DefaultColor         = "Teal"
+
+sv:Ma/XCAT_thyroid_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_thyroid_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_thyroid_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_thyroid_activity/DefaultColor         = "Teal"
+
+sv:Ma/XCAT_thymus_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_thymus_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_thymus_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_thymus_activity/DefaultColor      = "Teal"
+
+sv:Ma/XCAT_salivary_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_salivary_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_salivary_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_salivary_activity/DefaultColor        = "Teal"
+
+sv:Ma/XCAT_pituitary_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_pituitary_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_pituitary_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_pituitary_activity/DefaultColor       = "Teal"
+
+sv:Ma/XCAT_eye_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_eye_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_eye_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_eye_activity/DefaultColor         = "Blue"
+
+sv:Ma/XCAT_lens_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_lens_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_lens_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_lens_activity/DefaultColor        = "Blue"
+
+sv:Ma/XCAT_lesn_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_lesn_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_lesn_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_lesn_activity/DefaultColor        = "Blue"
+
+sv:Ma/XCAT_rbreast_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_rbreast_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_rbreast_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_rbreast_activity/DefaultColor         = "Blue"
+
+sv:Ma/XCAT_lbreast_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_lbreast_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_lbreast_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_lbreast_activity/DefaultColor         = "Blue"
+
+sv:Ma/XCAT_right_lung_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_right_lung_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_right_lung_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_right_lung_activity/DefaultColor      = "Blue"
+
+sv:Ma/XCAT_left_lung_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_left_lung_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_left_lung_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_left_lung_activity/DefaultColor       = "Blue"
+
+sv:Ma/XCAT_esophagus_contents_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_esophagus_contents_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_esophagus_contents_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_esophagus_contents_activity/DefaultColor      = "Navy"
+
+sv:Ma/XCAT_right_kidney_cortex_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_right_kidney_cortex_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_right_kidney_cortex_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_right_kidney_cortex_activity/DefaultColor       = "Navy"
+
+sv:Ma/XCAT_left_kidney_cortex_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_left_kidney_cortex_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_left_kidney_cortex_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_left_kidney_cortex_activity/DefaultColor      = "Navy"
+
+sv:Ma/XCAT_right_kidney_medulla_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_right_kidney_medulla_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_right_kidney_medulla_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_right_kidney_medulla_activity/DefaultColor      = "Navy"
+
+sv:Ma/XCAT_left_kidney_medulla_activity/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_left_kidney_medulla_activity/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_left_kidney_medulla_activity/Density      = 1.0 g/cm3
+s:Ma/XCAT_left_kidney_medulla_activity/DefaultColor       = "Navy"
+
+sv:Ma/XCAT_right_renal_pelvis_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_right_renal_pelvis_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_right_renal_pelvis_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_right_renal_pelvis_activity/DefaultColor      = "Navy"
+
+sv:Ma/XCAT_left_renal_pelvis_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_left_renal_pelvis_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_left_renal_pelvis_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_left_renal_pelvis_activity/DefaultColor       = "Fuchsia"
+
+sv:Ma/XCAT_asc_large_intest_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_asc_large_intest_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_asc_large_intest_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_asc_large_intest_activity/DefaultColor        = "Fuchsia"
+
+sv:Ma/XCAT_trans_large_intest_activity/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_trans_large_intest_activity/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_trans_large_intest_activity/Density       = 1.0 g/cm3
+s:Ma/XCAT_trans_large_intest_activity/DefaultColor      = "Fuchsia"
+
+sv:Ma/XCAT_desc_large_intest_activity/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_desc_large_intest_activity/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_desc_large_intest_activity/Density        = 1.0 g/cm3
+s:Ma/XCAT_desc_large_intest_activity/DefaultColor       = "Fuchsia"
+
+sv:Ma/XCAT_small_intest_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_small_intest_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_small_intest_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_small_intest_activity/DefaultColor        = "Fuchsia"
+
+sv:Ma/XCAT_trach_bronch_activity/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_trach_bronch_activity/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_trach_bronch_activity/Density         = 1.0 g/cm3
+s:Ma/XCAT_trach_bronch_activity/DefaultColor        = "Fuchsia"
+
+sv:Ma/XCAT_Corpus_Callosum_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Corpus_Callosum_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Corpus_Callosum_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Corpus_Callosum_act/DefaultColor      = "Fuchsia"
+
+sv:Ma/XCAT_Caudate_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Caudate_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Caudate_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Caudate_act/DefaultColor      = "Purple"
+
+sv:Ma/XCAT_Internal_capsule_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Internal_capsule_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Internal_capsule_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Internal_capsule_act/DefaultColor         = "Purple"
+
+sv:Ma/XCAT_Putamen_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Putamen_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Putamen_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Putamen_act/DefaultColor      = "Purple"
+
+sv:Ma/XCAT_Globus_pallidus_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Globus_pallidus_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Globus_pallidus_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Globus_pallidus_act/DefaultColor      = "Purple"
+
+sv:Ma/XCAT_Thalamus_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Thalamus_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Thalamus_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Thalamus_act/DefaultColor         = "Purple"
+
+sv:Ma/XCAT_Fornix_act/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Fornix_act/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_Fornix_act/Density        = 1.0 g/cm3
+s:Ma/XCAT_Fornix_act/DefaultColor       = "Purple"
+
+sv:Ma/XCAT_Anterior_commissure_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Anterior_commissure_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Anterior_commissure_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Anterior_commissure_act/DefaultColor      = "Lightblue"
+
+sv:Ma/XCAT_Amygdala_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Amygdala_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Amygdala_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Amygdala_act/DefaultColor         = "Lightblue"
+
+sv:Ma/XCAT_Hippocampus_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Hippocampus_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Hippocampus_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Hippocampus_act/DefaultColor      = "Lightblue"
+
+sv:Ma/XCAT_Lateral_ventricle_act/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Lateral_ventricle_act/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_Lateral_ventricle_act/Density         = 1.0 g/cm3
+s:Ma/XCAT_Lateral_ventricle_act/DefaultColor        = "Lightblue"
+
+sv:Ma/XCAT_Third_ventricle_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Third_ventricle_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Third_ventricle_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Third_ventricle_act/DefaultColor      = "Lightblue"
+
+sv:Ma/XCAT_Fourth_ventricle_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Fourth_ventricle_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Fourth_ventricle_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Fourth_ventricle_act/DefaultColor         = "Lightblue"
+
+sv:Ma/XCAT_Cerebral_aqueduct_act/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Cerebral_aqueduct_act/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_Cerebral_aqueduct_act/Density         = 1.0 g/cm3
+s:Ma/XCAT_Cerebral_aqueduct_act/DefaultColor        = "Lightblue"
+
+sv:Ma/XCAT_Mamillary_bodies_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Mamillary_bodies_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Mamillary_bodies_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Mamillary_bodies_act/DefaultColor         = "Pink"
+
+sv:Ma/XCAT_Cerebral_peduncles_act/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Cerebral_peduncles_act/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_Cerebral_peduncles_act/Density        = 1.0 g/cm3
+s:Ma/XCAT_Cerebral_peduncles_act/DefaultColor       = "Pink"
+
+sv:Ma/XCAT_Superior_colliculus_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Superior_colliculus_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Superior_colliculus_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Superior_colliculus_act/DefaultColor      = "Pink"
+
+sv:Ma/XCAT_Inferior_colliculus_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Inferior_colliculus_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Inferior_colliculus_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Inferior_colliculus_act/DefaultColor      = "Pink"
+
+sv:Ma/XCAT_Pineal_gland_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Pineal_gland_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Pineal_gland_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Pineal_gland_act/DefaultColor         = "Pink"
+
+sv:Ma/XCAT_Periacquaductal_grey_outer_act/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Periacquaductal_grey_outer_act/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_Periacquaductal_grey_outer_act/Density        = 1.0 g/cm3
+s:Ma/XCAT_Periacquaductal_grey_outer_act/DefaultColor     = "Pink"
+
+sv:Ma/XCAT_Periacquaductal_grey_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Periacquaductal_grey_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Periacquaductal_grey_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Periacquaductal_grey_act/DefaultColor         = "Orange"
+
+sv:Ma/XCAT_Pons_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Pons_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Pons_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Pons_act/DefaultColor         = "Orange"
+
+sv:Ma/XCAT_Superior_cerebellar_peduncle_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Superior_cerebellar_peduncle_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Superior_cerebellar_peduncle_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Superior_cerebellar_peduncle_act/DefaultColor   = "Orange"
+
+sv:Ma/XCAT_Middle_cerebellar_peduncle_act/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Middle_cerebellar_peduncle_act/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_Middle_cerebellar_peduncle_act/Density        = 1.0 g/cm3
+s:Ma/XCAT_Middle_cerebellar_peduncle_act/DefaultColor     = "Orange"
+
+sv:Ma/XCAT_Substantia_nigra_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Substantia_nigra_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Substantia_nigra_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Substantia_nigra_act/DefaultColor         = "Orange"
+
+sv:Ma/XCAT_Medulla_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Medulla_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_Medulla_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_Medulla_act/DefaultColor      = "Orange"
+
+sv:Ma/XCAT_Medullary_pyramids_act/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Medullary_pyramids_act/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_Medullary_pyramids_act/Density        = 1.0 g/cm3
+s:Ma/XCAT_Medullary_pyramids_act/DefaultColor       = "Orange"
+
+sv:Ma/XCAT_Inferior_olive_act/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Inferior_olive_act/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_Inferior_olive_act/Density        = 1.0 g/cm3
+s:Ma/XCAT_Inferior_olive_act/DefaultColor       = "Brown"
+
+sv:Ma/XCAT_Tegmentum_of_midbrain_act/Components     = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Tegmentum_of_midbrain_act/Fractions      = 2 0.111894 0.888106
+d:Ma/XCAT_Tegmentum_of_midbrain_act/Density         = 1.0 g/cm3
+s:Ma/XCAT_Tegmentum_of_midbrain_act/DefaultColor        = "Brown"
+
+sv:Ma/XCAT_Midbrain_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_Midbrain_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_Midbrain_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_Midbrain_act/DefaultColor         = "Brown"
+
+sv:Ma/XCAT_cerebellum_act/Components    = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_cerebellum_act/Fractions     = 2 0.111894 0.888106
+d:Ma/XCAT_cerebellum_act/Density        = 1.0 g/cm3
+s:Ma/XCAT_cerebellum_act/DefaultColor       = "Brown"
+
+sv:Ma/XCAT_white_matter_act/Components  = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_white_matter_act/Fractions   = 2 0.111894 0.888106
+d:Ma/XCAT_white_matter_act/Density      = 1.0 g/cm3
+s:Ma/XCAT_white_matter_act/DefaultColor         = "Brown"
+
+sv:Ma/XCAT_grey_matter_act/Components   = 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_grey_matter_act/Fractions    = 2 0.111894 0.888106
+d:Ma/XCAT_grey_matter_act/Density       = 1.0 g/cm3
+s:Ma/XCAT_grey_matter_act/DefaultColor      = "Brown"

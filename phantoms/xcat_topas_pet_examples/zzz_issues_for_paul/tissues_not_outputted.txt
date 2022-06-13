@@ -1,0 +1,13 @@
+yellow_bone_marrow_activity = 1.000000		# added manually
+coronary_art_activity = 10.000000		# added manually
+coronary_vein_activity = 11.000000		# added manually
+skin_activity = 13.000000			# added manually
+sinus_activity = 18.000000			# added manually
+larynx_activity = 26.000000			# added manually
+spinal_cord_activity = 41.000000		# added manually
+penis_activity = 56.000000			# added manually
+thyroid_activity = 74.000000			# added manually
+
+zero-defined volumes:
+skin
+larynx
