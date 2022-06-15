@@ -63,7 +63,7 @@ s:So/Positrons/ActiveMaterial			= "G4_WATER"
 s:So/Positrons/BeamParticle			= "e+"
 d:So/Positrons/BeamEnergy			= 0.6335 MeV
 b:So/Positrons/RecursivelyIncludeChildren 	= "True"
-ic:So/Positrons/NumberOfHistoriesInRun 	= 10000
+ic:So/Positrons/NumberOfHistoriesInRun 	= 10
 
 i:Ts/ShowHistoryCountAtInterval = 10000
 
