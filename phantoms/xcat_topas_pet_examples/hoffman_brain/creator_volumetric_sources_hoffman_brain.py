@@ -142,7 +142,7 @@ def main():
 	vol_white_matt = 1510*.2773
 
 	#defines the time chunk over which the part of the scan takes place in seconds -- currently set to 30 min
-	time = 30*60
+	time = .0000003
 
 	#begins reading the long string of ratios above and appending corresponding sources to .topas file
 	lines = materials_used.splitlines()

@@ -859,7 +859,7 @@
 	s:So/XCAT_white_matter_actSource/Component       = "Patient"				# specifies that the source is defined for the Patient geometry
 	sc:So/XCAT_white_matter_actSource/ActiveMaterial = "XCAT_white_matter_act"			# specifies which material within the Patient geometry is active i.e. contain radionuclides
 	s:So/XCAT_white_matter_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
-	ic:So/XCAT_white_matter_actSource/NumberOfHistoriesInRun = 6218036550				# the number of particles that will be randomly distributed throughout the active material
+	ic:So/XCAT_white_matter_actSource/NumberOfHistoriesInRun = 1				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_white_matter_actSource/RecursivelyIncludeChildren = "True"			
 	ic:So/XCAT_white_matter_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
 
@@ -873,7 +873,7 @@
 	s:So/XCAT_grey_matter_actSource/Component       = "Patient"				# specifies that the source is defined for the Patient geometry
 	sc:So/XCAT_grey_matter_actSource/ActiveMaterial = "XCAT_grey_matter_act"			# specifies which material within the Patient geometry is active i.e. contain radionuclides
 	s:So/XCAT_grey_matter_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
-	ic:So/XCAT_grey_matter_actSource/NumberOfHistoriesInRun = 48802505400				# the number of particles that will be randomly distributed throughout the active material
+	ic:So/XCAT_grey_matter_actSource/NumberOfHistoriesInRun = 8				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_grey_matter_actSource/RecursivelyIncludeChildren = "True"			
 	ic:So/XCAT_grey_matter_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
 

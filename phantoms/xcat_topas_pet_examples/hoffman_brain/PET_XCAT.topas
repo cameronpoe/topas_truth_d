@@ -9,17 +9,6 @@ sv:Ph/Default/Modules = 2 "g4em-standard_opt4" "g4em-penelope"
 
 b:Ts/PauseBeforeQuit = "True"
 
-s:Ge/Center_Water/Parent  	= "AirBox"
-s:Ge/Center_Water/Type    	= "TsCylinder"
-s:Ge/Center_Water/Material	= "G4_WATER"
-d:Ge/Center_Water/Rmax     	= .106 m
-d:Ge/Center_Water/HL		= .2 m
-d:Ge/Center_Water/TransX  	= 0. m
-d:Ge/Center_Water/TransY  	= 0. m
-d:Ge/Center_Water/TransZ  	= 0. m
-#d:Ge/Center_Water/MaxStepSize	= 1. mm
-s:Ge/Center_Water/Color  	= "green"
-
 s:Ge/World/Material  = "Vacuum"
 d:Ge/World/HLX       = 10.0 m
 d:Ge/World/HLY       = 10.0 m
@@ -34,19 +23,6 @@ d:Ge/AirBox/HLZ	= 10.0 m
 s:Ge/AirBox/Parent	= "world"
 b:Ge/AirBox/Invisible	= "true"
 
-
-
-s:Ge/SphereSource/Type     		= "TsSphere"
-s:Ge/SphereSource/Parent   		= "Center_Water"
-sc:Ge/SphereSource/Material 		= "G4_WATER"
-dc:Ge/SphereSource/RMax     		= 10 mm
-dc:Ge/SphereSource/TransZ   		= 0. cm
-dc:Ge/SphereSource/TransY		= 0. cm
-dc:Ge/SphereSource/TransX		= 09. cm
-s:Ge/SphereSource/color		= "red"
-#d:Ge/SphereSource/MaxStepSize	= 1. um
-s:Ge/SphereSource/DrawingStyle	= "wireframe"
-
 s:Ge/DetectorVolume/Type	= "TsCylinder"
 s:Ge/DetectorVolume/Parent	= "AirBox"
 d:Ge/DetectorVolume/HL		= 1 m
@@ -55,15 +31,6 @@ d:Ge/DetectorVolume/RMax	= 0.69 m
 s:Ge/DetectorVolume/Material	= "G4_WATER"
 #d:Ge/DetectorVolume/MaxStepSize	= 1. mm
 d:Ge/DetectorVolume/MinStepSize 	= 0.01 mm
-
-
-s:So/Positrons/Type				= "Volumetric"
-s:So/Positrons/Component			= "SphereSource"
-s:So/Positrons/ActiveMaterial			= "G4_WATER"
-s:So/Positrons/BeamParticle			= "e+"
-d:So/Positrons/BeamEnergy			= 0.6335 MeV
-b:So/Positrons/RecursivelyIncludeChildren 	= "True"
-ic:So/Positrons/NumberOfHistoriesInRun 	= 10
 
 i:Ts/ShowHistoryCountAtInterval = 10000
 
