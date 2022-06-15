@@ -1,7 +1,7 @@
-b:Gr/ViewA/Active	= "True"
-b:Gr/ViewB/Active	= "True"
-b:Gr/ViewC/Active	= "True"
-b:Gr/ViewD/Active	= "True"
+b:Gr/ViewA/Active	= "False"
+b:Gr/ViewB/Active	= "False"
+b:Gr/ViewC/Active	= "False"
+b:Gr/ViewD/Active	= "False"
 
 #sv:Ph/Default/Modules = 1 "g4em-standard_opt1"
 #d:Ph/Default/CutForElectron = 0.5 um # overrides CutForAllParticles for Electron
@@ -32,7 +32,15 @@ s:Ge/DetectorVolume/Material	= "G4_WATER"
 #d:Ge/DetectorVolume/MaxStepSize	= 1. mm
 d:Ge/DetectorVolume/MinStepSize 	= 0.01 mm
 
-i:Ts/ShowHistoryCountAtInterval = 10000
+includeFile = xcat_hoffman_brain.topas
+s:Ge/Patient/Parent   = "AirBox"
+d:Ge/Patient/TransX   = 0. m
+d:Ge/Patient/TransY   = 0. m
+d:Ge/Patient/TransZ   = 0. m
+d:Ge/Patient/RotX     = 0. deg
+d:Ge/Patient/RotY     = 0. deg
+d:Ge/Patient/RotZ     = 0 deg
+
 
 i:Ts/Seed = 26
 #i:Ts/FindSeedForHistory = 8

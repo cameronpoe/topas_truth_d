@@ -7,7 +7,7 @@
 	s:So/XCAT_yellow_bone_marrow_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_yellow_bone_marrow_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_yellow_bone_marrow_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_yellow_bone_marrow_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_yellow_bone_marrow_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_yellow_bone_marrow_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -21,7 +21,7 @@
 	s:So/XCAT_myoLV_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_myoLV_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_myoLV_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_myoLV_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_myoLV_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_myoLV_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -35,7 +35,7 @@
 	s:So/XCAT_myoRA_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_myoRA_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_myoRA_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_myoRA_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_myoRA_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_myoRA_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -49,7 +49,7 @@
 	s:So/XCAT_bldplLV_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_bldplLV_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_bldplLV_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_bldplLV_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_bldplLV_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_bldplLV_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -63,7 +63,7 @@
 	s:So/XCAT_bldplRV_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_bldplRV_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_bldplRV_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_bldplRV_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_bldplRV_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_bldplRV_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -77,7 +77,7 @@
 	s:So/XCAT_bldplLA_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_bldplLA_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_bldplLA_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_bldplLA_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_bldplLA_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_bldplLA_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -91,7 +91,7 @@
 	s:So/XCAT_bldplRA_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_bldplRA_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_bldplRA_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_bldplRA_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_bldplRA_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_bldplRA_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -105,7 +105,7 @@
 	s:So/XCAT_coronary_art_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_coronary_art_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_coronary_art_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_coronary_art_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_coronary_art_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_coronary_art_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -119,7 +119,7 @@
 	s:So/XCAT_body_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_body_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_body_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_body_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_body_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_body_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -133,7 +133,7 @@
 	s:So/XCAT_skin_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_skin_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_skin_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_skin_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_skin_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_skin_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -147,7 +147,7 @@
 	s:So/XCAT_muscle_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_muscle_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_muscle_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_muscle_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_muscle_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_muscle_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -161,7 +161,7 @@
 	s:So/XCAT_brain_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_brain_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_brain_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_brain_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_brain_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_brain_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -175,7 +175,7 @@
 	s:So/XCAT_sinus_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_sinus_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_sinus_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_sinus_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_sinus_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_sinus_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -189,7 +189,7 @@
 	s:So/XCAT_liver_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_liver_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_liver_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_liver_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_liver_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_liver_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -203,7 +203,7 @@
 	s:So/XCAT_gall_bladder_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_gall_bladder_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_gall_bladder_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_gall_bladder_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_gall_bladder_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_gall_bladder_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -217,7 +217,7 @@
 	s:So/XCAT_right_lung_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_right_lung_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_right_lung_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_right_lung_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_right_lung_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_right_lung_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -231,7 +231,7 @@
 	s:So/XCAT_left_lung_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_left_lung_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_left_lung_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_left_lung_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_left_lung_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_left_lung_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -245,7 +245,7 @@
 	s:So/XCAT_esophagus_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_esophagus_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_esophagus_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_esophagus_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_esophagus_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_esophagus_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -259,7 +259,7 @@
 	s:So/XCAT_esophagus_contents_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_esophagus_contents_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_esophagus_contents_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_esophagus_contents_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_esophagus_contents_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_esophagus_contents_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -273,7 +273,7 @@
 	s:So/XCAT_laryngopharynx_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_laryngopharynx_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_laryngopharynx_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_laryngopharynx_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_laryngopharynx_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_laryngopharynx_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -287,7 +287,7 @@
 	s:So/XCAT_larynx_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_larynx_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_larynx_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_larynx_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_larynx_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_larynx_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -301,7 +301,7 @@
 	s:So/XCAT_st_wall_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_st_wall_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_st_wall_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_st_wall_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_st_wall_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_st_wall_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -315,7 +315,7 @@
 	s:So/XCAT_st_cnts_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_st_cnts_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_st_cnts_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_st_cnts_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_st_cnts_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_st_cnts_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -329,7 +329,7 @@
 	s:So/XCAT_pancreas_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_pancreas_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_pancreas_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_pancreas_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_pancreas_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_pancreas_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -343,7 +343,7 @@
 	s:So/XCAT_right_kidney_cortex_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_right_kidney_cortex_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_right_kidney_cortex_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_right_kidney_cortex_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_right_kidney_cortex_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_right_kidney_cortex_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -357,7 +357,7 @@
 	s:So/XCAT_right_kidney_medulla_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_right_kidney_medulla_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_right_kidney_medulla_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_right_kidney_medulla_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_right_kidney_medulla_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_right_kidney_medulla_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -371,7 +371,7 @@
 	s:So/XCAT_left_kidney_cortex_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_left_kidney_cortex_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_left_kidney_cortex_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_left_kidney_cortex_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_left_kidney_cortex_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_left_kidney_cortex_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -385,7 +385,7 @@
 	s:So/XCAT_left_kidney_medulla_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_left_kidney_medulla_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_left_kidney_medulla_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_left_kidney_medulla_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_left_kidney_medulla_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_left_kidney_medulla_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -399,7 +399,7 @@
 	s:So/XCAT_spleen_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_spleen_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_spleen_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_spleen_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_spleen_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_spleen_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -413,7 +413,7 @@
 	s:So/XCAT_rib_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_rib_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_rib_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_rib_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_rib_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_rib_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -427,7 +427,7 @@
 	s:So/XCAT_cortical_bone_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_cortical_bone_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_cortical_bone_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_cortical_bone_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_cortical_bone_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_cortical_bone_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -441,7 +441,7 @@
 	s:So/XCAT_spine_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_spine_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_spine_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_spine_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_spine_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_spine_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -455,7 +455,7 @@
 	s:So/XCAT_spinal_cord_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_spinal_cord_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_spinal_cord_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_spinal_cord_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_spinal_cord_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_spinal_cord_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -469,7 +469,7 @@
 	s:So/XCAT_bone_marrow_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_bone_marrow_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_bone_marrow_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_bone_marrow_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_bone_marrow_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_bone_marrow_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -483,7 +483,7 @@
 	s:So/XCAT_art_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_art_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_art_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_art_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_art_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_art_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -497,7 +497,7 @@
 	s:So/XCAT_vein_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_vein_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_vein_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_vein_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_vein_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_vein_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -511,7 +511,7 @@
 	s:So/XCAT_bladder_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_bladder_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_bladder_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_bladder_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_bladder_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_bladder_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -525,7 +525,7 @@
 	s:So/XCAT_prostate_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_prostate_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_prostate_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_prostate_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_prostate_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_prostate_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -539,7 +539,7 @@
 	s:So/XCAT_asc_large_intest_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_asc_large_intest_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_asc_large_intest_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_asc_large_intest_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_asc_large_intest_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_asc_large_intest_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -553,7 +553,7 @@
 	s:So/XCAT_trans_large_intest_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_trans_large_intest_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_trans_large_intest_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_trans_large_intest_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_trans_large_intest_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_trans_large_intest_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -567,7 +567,7 @@
 	s:So/XCAT_desc_large_intest_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_desc_large_intest_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_desc_large_intest_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_desc_large_intest_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_desc_large_intest_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_desc_large_intest_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -581,7 +581,7 @@
 	s:So/XCAT_small_intest_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_small_intest_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_small_intest_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_small_intest_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_small_intest_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_small_intest_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -595,7 +595,7 @@
 	s:So/XCAT_rectum_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_rectum_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_rectum_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_rectum_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_rectum_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_rectum_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -609,7 +609,7 @@
 	s:So/XCAT_sem_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_sem_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_sem_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_sem_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_sem_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_sem_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -623,7 +623,7 @@
 	s:So/XCAT_vas_def_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_vas_def_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_vas_def_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_vas_def_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_vas_def_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_vas_def_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -637,7 +637,7 @@
 	s:So/XCAT_test_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_test_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_test_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_test_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_test_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_test_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -651,7 +651,7 @@
 	s:So/XCAT_penis_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_penis_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_penis_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_penis_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_penis_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_penis_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -665,7 +665,7 @@
 	s:So/XCAT_epididymus_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_epididymus_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_epididymus_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_epididymus_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_epididymus_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_epididymus_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -679,7 +679,7 @@
 	s:So/XCAT_pericardium_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_pericardium_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_pericardium_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_pericardium_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_pericardium_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_pericardium_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -693,7 +693,7 @@
 	s:So/XCAT_cartilage_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_cartilage_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_cartilage_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_cartilage_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_cartilage_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_cartilage_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -707,7 +707,7 @@
 	s:So/XCAT_intest_air_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_intest_air_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_intest_air_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_intest_air_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_intest_air_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_intest_air_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -721,7 +721,7 @@
 	s:So/XCAT_urethra_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_urethra_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_urethra_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_urethra_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_urethra_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_urethra_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -735,7 +735,7 @@
 	s:So/XCAT_thyroid_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_thyroid_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_thyroid_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_thyroid_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_thyroid_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_thyroid_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -749,7 +749,7 @@
 	s:So/XCAT_salivary_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_salivary_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_salivary_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_salivary_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_salivary_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_salivary_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -763,7 +763,7 @@
 	s:So/XCAT_eye_activitySource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_eye_activitySource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_eye_activitySource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_eye_activitySource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_eye_activitySource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_eye_activitySource/BeamEnergySpectrumType          = "Discrete"
@@ -777,7 +777,7 @@
 	s:So/XCAT_Corpus_Callosum_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_Corpus_Callosum_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_Corpus_Callosum_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_Corpus_Callosum_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_Corpus_Callosum_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_Corpus_Callosum_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -791,7 +791,7 @@
 	s:So/XCAT_Putamen_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_Putamen_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_Putamen_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_Putamen_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_Putamen_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_Putamen_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -805,7 +805,7 @@
 	s:So/XCAT_Thalamus_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_Thalamus_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_Thalamus_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_Thalamus_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_Thalamus_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_Thalamus_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -819,7 +819,7 @@
 	s:So/XCAT_Periacquaductal_grey_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_Periacquaductal_grey_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_Periacquaductal_grey_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_Periacquaductal_grey_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_Periacquaductal_grey_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_Periacquaductal_grey_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -833,7 +833,7 @@
 	s:So/XCAT_Middle_cerebellar_peduncle_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_Middle_cerebellar_peduncle_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_Middle_cerebellar_peduncle_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_Middle_cerebellar_peduncle_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_Middle_cerebellar_peduncle_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_Middle_cerebellar_peduncle_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -847,7 +847,7 @@
 	s:So/XCAT_cerebellum_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_cerebellum_actSource/NumberOfHistoriesInRun = 0				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_cerebellum_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_cerebellum_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_cerebellum_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_cerebellum_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -861,7 +861,7 @@
 	s:So/XCAT_white_matter_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_white_matter_actSource/NumberOfHistoriesInRun = 1				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_white_matter_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_white_matter_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_white_matter_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_white_matter_actSource/BeamEnergySpectrumType          = "Discrete"
@@ -875,7 +875,7 @@
 	s:So/XCAT_grey_matter_actSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/XCAT_grey_matter_actSource/NumberOfHistoriesInRun = 8				# the number of particles that will be randomly distributed throughout the active material
 	b:So/XCAT_grey_matter_actSource/RecursivelyIncludeChildren = "True"			
-	ic:So/XCAT_grey_matter_actSource/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/XCAT_grey_matter_actSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/XCAT_grey_matter_actSource/BeamEnergySpectrumType          = "Discrete"

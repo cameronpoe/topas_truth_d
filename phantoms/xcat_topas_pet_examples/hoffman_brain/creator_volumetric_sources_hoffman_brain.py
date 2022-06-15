@@ -163,7 +163,7 @@ def main():
 	s:So/''' + tissue + '''Source/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/''' + tissue + '''Source/NumberOfHistoriesInRun = ''' + str(int(ratio)) + '''				# the number of particles that will be randomly distributed throughout the active material
 	b:So/''' + tissue + '''Source/RecursivelyIncludeChildren = "True"			
-	ic:So/''' + tissue + '''Source/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/''' + tissue + '''Source/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/''' + tissue + '''Source/BeamEnergySpectrumType          = "Discrete"
