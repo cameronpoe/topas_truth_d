@@ -7,7 +7,7 @@ b:Gr/ViewD/Active	= "False"
 #d:Ph/Default/CutForElectron = 0.5 um # overrides CutForAllParticles for Electron
 sv:Ph/Default/Modules = 2 "g4em-standard_opt4" "g4em-penelope"
 
-b:Ts/PauseBeforeQuit = "True"
+b:Ts/PauseBeforeQuit = "False"
 
 s:Ge/World/Material  = "Vacuum"
 d:Ge/World/HLX       = 10.0 m

@@ -48,9 +48,7 @@ i:Ts/ShowHistoryCountAtInterval = 1000000
 
 b:Ts/PauseBeforeQuit = "True"
 
-#Ts/UseQt = "True"''')
-
-f.close()
+#Ts/UseQt = "True"
 
 
 
