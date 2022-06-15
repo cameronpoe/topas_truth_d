@@ -1,16 +1,16 @@
 # XCAT Material Definitions
 # (any spaces in material name from XCAT log file are replaced with underscores)
-# Temporarily, all are actually water, just with different colors
+
 #removed r_ and l_kidney materials since the proper ones are right_ and left_kidney
 #removed r_ and l_renal materials since the proper ones are right_ and left_renal
 #removed materials for attenuation phantom
 
-#materials added from Publication 110 ICRP Annals:
+# material compositions and densities for the below tissues taken from Annals of ICRP P110, find it on psec.uchicago.edu/Simulation.php
 # Air, skin, grey_matter, white_matter, cortical_bone, eye, muscle
 # bldplLA, bldplRA, bldplLV, bldplRV
-#NOTE: cortical_bone is defined to be 'bone mineral' medium of P110 of ICRP Annals
-#NOTE: grey_matter and white_matter are defined to be the compositions and densities of the 'brain' medium from P110 of ICRP Annals
-#NOTE: for all bldpl's, the composition and density of 'blood' from P110 of ICRP Annals was used
+# NOTE: cortical_bone is defined to be 'bone mineral' medium of P110 of ICRP Annals
+# NOTE: grey_matter and white_matter are defined to be the compositions and densities of the 'brain' medium from P110 of ICRP Annals
+# NOTE: for all bldpl's, the composition and density of 'blood' from P110 of ICRP Annals was used
 
 sv:Ma/XCAT_Air/Components 			= 2 "Nitrogen" "Oxygen"
 uv:Ma/XCAT_Air/Fractions  			= 2 0.8 0.2
