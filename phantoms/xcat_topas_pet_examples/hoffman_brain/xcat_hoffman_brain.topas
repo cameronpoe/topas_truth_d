@@ -1,8 +1,8 @@
 #creates Patient geometry
 s:Ge/Patient/Type		= "TsImageCube"
 s:Ge/Patient/InputDirectory	= "./"
-s:Ge/Patient/InputFile		= "xcat_full_body.out_act_1.bin"		# inputs binary XCAT activity file	
-s:Ge/Patient/MetaDataFile	= "xcat_full_body.out_log"			# inputs XCAT log file aka meta data file
+s:Ge/Patient/InputFile		= "/mnt/c/Users/camer/Desktop/xcat_full_body.out_act_1.bin"		# inputs binary XCAT activity file	
+s:Ge/Patient/MetaDataFile	= "/mnt/c/Users/camer/topaspet-github/topas_truth_d/phantoms/xcat_topas_pet_examples/hoffman_brain/xcat_full_body.out_log"			# inputs XCAT log file aka meta data file
 s:Ge/Patient/ImagingToMaterialConverter = "XCAT_Activity"		# I think it can be "XCAT_Attenuation" or "XCAT_Activity"
 includeFile = XCAT_Materials_Hoffman_Brain_1.txt				# includes separate definitions of all materials in the XCAT phantom written in TOPAS
 s:Ge/Patient/DataType = "FLOAT"						# sets the data type for each voxel of the patient to be a float
