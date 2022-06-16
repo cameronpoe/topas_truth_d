@@ -6,11 +6,32 @@
 #removed materials for attenuation phantom
 
 # material compositions and densities for the below tissues taken from Annals of ICRP P110, find it on psec.uchicago.edu/Simulation.php
-# Air, skin, grey_matter, white_matter, cortical_bone, eye, muscle
-# bldplLA, bldplRA, bldplLV, bldplRV
-# NOTE: cortical_bone is defined to be 'bone mineral' medium of P110 of ICRP Annals
-# NOTE: grey_matter and white_matter are defined to be the compositions and densities of the 'brain' medium from P110 of ICRP Annals
+# Air, skin, cortical_bone, eye, muscle, 
+# bldplLA, bldplRA, bldplLV, bldplRV, gall_bladder, 
+# pituitary, trach_bronch, thymus, ureter, liver,
+# myoLV, myoRV, myoLA, myoRA, spine,
+# rib, cartilage, pancreas, sm_intestine, asc_li,
+# trans_li, desc_li
+
+#kidney components:
+# right_kidney_cortex, left_kidney_cortex, right_kidney_medulla, left_kidney_medulla, right_renal_pelvis
+# left_renal_pelvis
+
+#brain components:
+# corpus_callosum, caudate, internal_capsule, putamen, globus_pallidus
+# thalamus, fornix, anterior_commissure, amygdala, hippocampus
+# lateral_ventricle, third_ventricle, fourth_ventricle, cerebral_aqueduct, mamillary_bodies
+# cerebral_peduncles, superior_colliculus, inferior_colliculus, pineal_gland, periacquaductal_grey_outer
+# periacquaductal_grey, pons, superior_cerebellar_peduncle, middle_cerebellar_peduncle, substantia_nigra
+# medulla, medullary_pyramids, inferior_olive, tegmentum_of_midbrain, midbrain
+# cerebellum, grey_matter, white_matter, brain
+
+# NOTE: for spine, rib, cortical_bone, the composition and density of 'bone mineral' from P110 of ICRP Annals was used
+# NOTE: for all brain components, the composition and density of 'brain' from P110 of ICRP Annals was used
 # NOTE: for all bldpl's, the composition and density of 'blood' from P110 of ICRP Annals was used
+# NOTE: for all myo materials, the composition and density of "heart" from P110 of ICRP Annals was used
+# NOTE: for all kidney components, the composition and density of "kidneys" from P110 of ICRP Annals was used
+# NOTE: for asc_li, trans_li, desc_li, the composition and density of "large intestine" fro P110 of ICRP Annals was used
 
 sv:Ma/XCAT_Air/Components 			= 2 "Nitrogen" "Oxygen"
 uv:Ma/XCAT_Air/Fractions  			= 2 0.8 0.2
@@ -51,24 +72,24 @@ s:Ma/XCAT_larynx_activity/DefaultColor 		= "black"
 
 #ADDITIONS BEGIN HERE
 
-sv:Ma/XCAT_myoLV_act/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_myoLV_act/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_myoLV_act/Density         = 1.0 g/cm3
+sv:Ma/XCAT_myoLV_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_myoLV_act/Fractions      = 9 0.104 0.138 0.029 0.719 0.001 0.002 0.002 0.002 0.003
+d:Ma/XCAT_myoLV_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_myoLV_act/DefaultColor        = "White"
 
-sv:Ma/XCAT_myoRV_act/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_myoRV_act/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_myoRV_act/Density         = 1.0 g/cm3
+sv:Ma/XCAT_myoRV_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_myoRV_act/Fractions      = 9 0.104 0.138 0.029 0.719 0.001 0.002 0.002 0.002 0.003
+d:Ma/XCAT_myoRV_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_myoRV_act/DefaultColor        = "White"
 
-sv:Ma/XCAT_myoLA_act/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_myoLA_act/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_myoLA_act/Density         = 1.0 g/cm3
+sv:Ma/XCAT_myoLA_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_myoLA_act/Fractions      = 9 0.104 0.138 0.029 0.719 0.001 0.002 0.002 0.002 0.003
+d:Ma/XCAT_myoLA_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_myoLA_act/DefaultColor        = "White"
 
-sv:Ma/XCAT_myoRA_act/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_myoRA_act/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_myoRA_act/Density         = 1.0 g/cm3
+sv:Ma/XCAT_myoRA_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_myoRA_act/Fractions      = 9 0.104 0.138 0.029 0.719 0.001 0.002 0.002 0.002 0.003
+d:Ma/XCAT_myoRA_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_myoRA_act/DefaultColor        = "White"
 
 sv:Ma/XCAT_bldplLV_act/Components   = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Iron"
@@ -105,9 +126,9 @@ uv:Ma/XCAT_muscle_activity/Fractions    = 9 .102 .142 .034 .711 .001 .002 .003 .
 d:Ma/XCAT_muscle_activity/Density       = 1.050 g/cm3
 s:Ma/XCAT_muscle_activity/DefaultColor      = "TransparentBlack"
 
-sv:Ma/XCAT_brain_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_brain_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_brain_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_brain_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_brain_activity/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_brain_activity/Density        = 1.050 g/cm3
 s:Ma/XCAT_brain_activity/DefaultColor       = "Grey"
 
 sv:Ma/XCAT_sinus_activity/Components    = 2 "Hydrogen" "Oxygen"
@@ -115,14 +136,14 @@ uv:Ma/XCAT_sinus_activity/Fractions     = 2 0.111894 0.888106
 d:Ma/XCAT_sinus_activity/Density        = 1.0 g/cm3
 s:Ma/XCAT_sinus_activity/DefaultColor       = "Grey"
 
-sv:Ma/XCAT_liver_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_liver_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_liver_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_liver_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_liver_activity/Fractions     = 9 0.102 0.130 0.031 0.725 0.002 0.002 0.003 0.002 0.003
+d:Ma/XCAT_liver_activity/Density        = 1.050 g/cm3
 s:Ma/XCAT_liver_activity/DefaultColor       = "Grey"
 
-sv:Ma/XCAT_gall_bladder_activity/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_gall_bladder_activity/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_gall_bladder_activity/Density         = 1.0 g/cm3
+sv:Ma/XCAT_gall_bladder_activity/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_gall_bladder_activity/Fractions      = 9 0.104 0.231 0.028 0.627 0.001 0.002 0.003 0.002 0.002
+d:Ma/XCAT_gall_bladder_activity/Density         = 1.030 g/cm3
 s:Ma/XCAT_gall_bladder_activity/DefaultColor        = "Grey"
 
 sv:Ma/XCAT_r_lung_activity/Components   = 2 "Hydrogen" "Oxygen"
@@ -135,9 +156,9 @@ uv:Ma/XCAT_l_lung_activity/Fractions    = 2 0.111894 0.888106
 d:Ma/XCAT_l_lung_activity/Density       = 1.0 g/cm3
 s:Ma/XCAT_l_lung_activity/DefaultColor      = "Red"
 
-sv:Ma/XCAT_esophagus_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_esophagus_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_esophagus_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_esophagus_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_esophagus_activity/Fractions     = 9 0.104 0.213 0.029 0.644 0.001 0.002 0.003 0.002 0.002
+d:Ma/XCAT_esophagus_activity/Density        = 1.030 g/cm3
 s:Ma/XCAT_esophagus_activity/DefaultColor       = "Red"
 
 sv:Ma/XCAT_laryngopharynx_activity/Components   = 2 "Hydrogen" "Oxygen"
@@ -155,14 +176,14 @@ uv:Ma/XCAT_st_cnts_activity/Fractions   = 2 0.111894 0.888106
 d:Ma/XCAT_st_cnts_activity/Density      = 1.0 g/cm3
 s:Ma/XCAT_st_cnts_activity/DefaultColor         = "Red"
 
-sv:Ma/XCAT_pancreas_activity/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_pancreas_activity/Fractions      = 2 0.111894 0.888106
+sv:Ma/XCAT_pancreas_activity/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_pancreas_activity/Fractions      = 9 0.105 0.155 0.025 0.706 0.002 0.002 0.001 0.002 0.002
 d:Ma/XCAT_pancreas_activity/Density         = 1.0 g/cm3
 s:Ma/XCAT_pancreas_activity/DefaultColor        = "Maroon"
 
 sv:Ma/XCAT_adrenal_activity/Components  = 2 "Hydrogen" "Oxygen"
 uv:Ma/XCAT_adrenal_activity/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_adrenal_activity/Density      = 1.0 g/cm3
+d:Ma/XCAT_adrenal_activity/Density      = 1.050 g/cm3
 s:Ma/XCAT_adrenal_activity/DefaultColor         = "Maroon"
 
 sv:Ma/XCAT_spleen_activity/Components   = 2 "Hydrogen" "Oxygen"
@@ -170,9 +191,9 @@ uv:Ma/XCAT_spleen_activity/Fractions    = 2 0.111894 0.888106
 d:Ma/XCAT_spleen_activity/Density       = 1.0 g/cm3
 s:Ma/XCAT_spleen_activity/DefaultColor      = "Yellow"
 
-sv:Ma/XCAT_rib_activity/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_rib_activity/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_rib_activity/Density      = 1.0 g/cm3
+sv:Ma/XCAT_rib_activity/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Magnesium" "Phosphorus" "Sulfur" "Calcium"
+uv:Ma/XCAT_rib_activity/Fractions   = 9 .036 .159 .042 .448 .003 .002 .094 .003 .213
+d:Ma/XCAT_rib_activity/Density      = 1.920 g/cm3
 s:Ma/XCAT_rib_activity/DefaultColor         = "Yellow"
 
 sv:Ma/XCAT_cortical_bone_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Magnesium" "Phosphorus" "Sulfur" "Calcium"
@@ -180,9 +201,9 @@ uv:Ma/XCAT_cortical_bone_activity/Fractions     = 9 .036 .159 .042 .448 .003 .00
 d:Ma/XCAT_cortical_bone_activity/Density        = 1.920 g/cm3
 s:Ma/XCAT_cortical_bone_activity/DefaultColor       = "Yellow"
 
-sv:Ma/XCAT_spine_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_spine_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_spine_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_spine_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Magnesium" "Phosphorus" "Sulfur" "Calcium"
+uv:Ma/XCAT_spine_activity/Fractions     = 9 .036 .159 .042 .448 .003 .002 .094 .003 .213
+d:Ma/XCAT_spine_activity/Density        = 1.920 g/cm3
 s:Ma/XCAT_spine_activity/DefaultColor       = "Yellow"
 
 sv:Ma/XCAT_spinal_cord_activity/Components  = 2 "Hydrogen" "Oxygen"
@@ -215,24 +236,24 @@ uv:Ma/XCAT_prostate_activity/Fractions      = 2 0.111894 0.888106
 d:Ma/XCAT_prostate_activity/Density         = 1.0 g/cm3
 s:Ma/XCAT_prostate_activity/DefaultColor        = "Olive"
 
-sv:Ma/XCAT_asc_li_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_asc_li_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_asc_li_activity/Density       = 1.0 g/cm3
+sv:Ma/XCAT_asc_li_activity/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_asc_li_activity/Fractions    = 9 0.105 0.113 0.026 0.750 0.001 0.001 0.001 0.002 0.001
+d:Ma/XCAT_asc_li_activity/Density       = 1.040 g/cm3
 s:Ma/XCAT_asc_li_activity/DefaultColor      = "Olive"
 
-sv:Ma/XCAT_trans_li_activity/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_trans_li_activity/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_trans_li_activity/Density         = 1.0 g/cm3
+sv:Ma/XCAT_trans_li_activity/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_trans_li_activity/Fractions      = 9 0.105 0.113 0.026 0.750 0.001 0.001 0.001 0.002 0.001
+d:Ma/XCAT_trans_li_activity/Density         = 1.040 g/cm3
 s:Ma/XCAT_trans_li_activity/DefaultColor        = "Olive"
 
-sv:Ma/XCAT_desc_li_activity/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_desc_li_activity/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_desc_li_activity/Density      = 1.0 g/cm3
+sv:Ma/XCAT_desc_li_activity/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_desc_li_activity/Fractions   = 9 0.105 0.113 0.026 0.750 0.001 0.001 0.001 0.002 0.001
+d:Ma/XCAT_desc_li_activity/Density      = 1.040 g/cm3
 s:Ma/XCAT_desc_li_activity/DefaultColor         = "Lime"
 
-sv:Ma/XCAT_sm_intest_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_sm_intest_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_sm_intest_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_sm_intest_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_sm_intest_activity/Fractions     = 9 0.105 0.113 0.026 0.750 0.001 0.001 0.001 0.002 0.001
+d:Ma/XCAT_sm_intest_activity/Density        = 1.040 g/cm3
 s:Ma/XCAT_sm_intest_activity/DefaultColor       = "Lime"
 
 sv:Ma/XCAT_rectum_activity/Components   = 2 "Hydrogen" "Oxygen"
@@ -270,9 +291,9 @@ uv:Ma/XCAT_pericardium_activity/Fractions   = 2 0.111894 0.888106
 d:Ma/XCAT_pericardium_activity/Density      = 1.0 g/cm3
 s:Ma/XCAT_pericardium_activity/DefaultColor         = "Green"
 
-sv:Ma/XCAT_cartilage_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_cartilage_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_cartilage_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_cartilage_activity/Components    = 8 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine"
+uv:Ma/XCAT_cartilage_activity/Fractions     = 8 0.096 0.099 0.022 0.744 0.005 0.022 0.009 0.003
+d:Ma/XCAT_cartilage_activity/Density        = 1.100 g/cm3
 s:Ma/XCAT_cartilage_activity/DefaultColor       = "Green"
 
 sv:Ma/XCAT_intest_air_activity/Components   = 2 "Hydrogen" "Oxygen"
@@ -280,9 +301,9 @@ uv:Ma/XCAT_intest_air_activity/Fractions    = 2 0.111894 0.888106
 d:Ma/XCAT_intest_air_activity/Density       = 1.0 g/cm3
 s:Ma/XCAT_intest_air_activity/DefaultColor      = "Green"
 
-sv:Ma/XCAT_ureter_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_ureter_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_ureter_activity/Density       = 1.0 g/cm3
+sv:Ma/XCAT_ureter_activity/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_ureter_activity/Fractions    = 9 0.104 0.231 0.028 0.627 0.001 0.002 0.003 0.002 0.002
+d:Ma/XCAT_ureter_activity/Density       = 1.030 g/cm3
 s:Ma/XCAT_ureter_activity/DefaultColor      = "Green"
 
 sv:Ma/XCAT_urethra_activity/Components  = 2 "Hydrogen" "Oxygen"
@@ -340,9 +361,9 @@ uv:Ma/XCAT_thyroid_activity/Fractions   = 2 0.111894 0.888106
 d:Ma/XCAT_thyroid_activity/Density      = 1.0 g/cm3
 s:Ma/XCAT_thyroid_activity/DefaultColor         = "Teal"
 
-sv:Ma/XCAT_thymus_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_thymus_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_thymus_activity/Density       = 1.0 g/cm3
+sv:Ma/XCAT_thymus_activity/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_thymus_activity/Fractions    = 9 0.104 0.231 0.028 0.627 0.001 0.002 0.003 0.002 0.002
+d:Ma/XCAT_thymus_activity/Density       = 1.030 g/cm3
 s:Ma/XCAT_thymus_activity/DefaultColor      = "Teal"
 
 sv:Ma/XCAT_salivary_activity/Components     = 2 "Hydrogen" "Oxygen"
@@ -350,9 +371,9 @@ uv:Ma/XCAT_salivary_activity/Fractions      = 2 0.111894 0.888106
 d:Ma/XCAT_salivary_activity/Density         = 1.0 g/cm3
 s:Ma/XCAT_salivary_activity/DefaultColor        = "Teal"
 
-sv:Ma/XCAT_pituitary_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_pituitary_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_pituitary_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_pituitary_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_pituitary_activity/Fractions     = 9 0.104 0.231 0.028 0.627 0.001 0.002 0.003 0.002 0.002
+d:Ma/XCAT_pituitary_activity/Density        = 1.030 g/cm3
 s:Ma/XCAT_pituitary_activity/DefaultColor       = "Teal"
 
 sv:Ma/XCAT_eye_activity/Components  = 8 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine"
@@ -395,34 +416,34 @@ uv:Ma/XCAT_esophagus_contents_activity/Fractions    = 2 0.111894 0.888106
 d:Ma/XCAT_esophagus_contents_activity/Density       = 1.0 g/cm3
 s:Ma/XCAT_esophagus_contents_activity/DefaultColor      = "Navy"
 
-sv:Ma/XCAT_right_kidney_cortex_activity/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_right_kidney_cortex_activity/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_right_kidney_cortex_activity/Density      = 1.0 g/cm3
+sv:Ma/XCAT_right_kidney_cortex_activity/Components  = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Calcium"
+uv:Ma/XCAT_right_kidney_cortex_activity/Fractions   = 10 0.103 0.124 0.031 0.731 0.002 0.002 0.002 0.002 0.002 0.001
+d:Ma/XCAT_right_kidney_cortex_activity/Density      = 1.050 g/cm3
 s:Ma/XCAT_right_kidney_cortex_activity/DefaultColor       = "Navy"
 
-sv:Ma/XCAT_left_kidney_cortex_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_left_kidney_cortex_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_left_kidney_cortex_activity/Density       = 1.0 g/cm3
+sv:Ma/XCAT_left_kidney_cortex_activity/Components   = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Calcium"
+uv:Ma/XCAT_left_kidney_cortex_activity/Fractions    = 10 0.103 0.124 0.031 0.731 0.002 0.002 0.002 0.002 0.002 0.001
+d:Ma/XCAT_left_kidney_cortex_activity/Density       = 1.050 g/cm3
 s:Ma/XCAT_left_kidney_cortex_activity/DefaultColor      = "Navy"
 
-sv:Ma/XCAT_right_kidney_medulla_activity/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_right_kidney_medulla_activity/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_right_kidney_medulla_activity/Density         = 1.0 g/cm3
+sv:Ma/XCAT_right_kidney_medulla_activity/Components     = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Calcium"
+uv:Ma/XCAT_right_kidney_medulla_activity/Fractions      = 10 0.103 0.124 0.031 0.731 0.002 0.002 0.002 0.002 0.002 0.001
+d:Ma/XCAT_right_kidney_medulla_activity/Density         = 1.050 g/cm3
 s:Ma/XCAT_right_kidney_medulla_activity/DefaultColor      = "Navy"
 
-sv:Ma/XCAT_left_kidney_medulla_activity/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_left_kidney_medulla_activity/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_left_kidney_medulla_activity/Density      = 1.0 g/cm3
+sv:Ma/XCAT_left_kidney_medulla_activity/Components  = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Calcium"
+uv:Ma/XCAT_left_kidney_medulla_activity/Fractions   = 10 0.103 0.124 0.031 0.731 0.002 0.002 0.002 0.002 0.002 0.001
+d:Ma/XCAT_left_kidney_medulla_activity/Density      = 1.050 g/cm3
 s:Ma/XCAT_left_kidney_medulla_activity/DefaultColor       = "Navy"
 
-sv:Ma/XCAT_right_renal_pelvis_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_right_renal_pelvis_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_right_renal_pelvis_activity/Density       = 1.0 g/cm3
+sv:Ma/XCAT_right_renal_pelvis_activity/Components   = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Calcium"
+uv:Ma/XCAT_right_renal_pelvis_activity/Fractions    = 10 0.103 0.124 0.031 0.731 0.002 0.002 0.002 0.002 0.002 0.001
+d:Ma/XCAT_right_renal_pelvis_activity/Density       = 1.050 g/cm3
 s:Ma/XCAT_right_renal_pelvis_activity/DefaultColor      = "Navy"
 
-sv:Ma/XCAT_left_renal_pelvis_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_left_renal_pelvis_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_left_renal_pelvis_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_left_renal_pelvis_activity/Components    = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Calcium"
+uv:Ma/XCAT_left_renal_pelvis_activity/Fractions     = 10 0.103 0.124 0.031 0.731 0.002 0.002 0.002 0.002 0.002 0.001
+d:Ma/XCAT_left_renal_pelvis_activity/Density        = 1.050 g/cm3
 s:Ma/XCAT_left_renal_pelvis_activity/DefaultColor       = "Fuchsia"
 
 sv:Ma/XCAT_asc_large_intest_activity/Components     = 2 "Hydrogen" "Oxygen"
@@ -445,164 +466,164 @@ uv:Ma/XCAT_small_intest_activity/Fractions      = 2 0.111894 0.888106
 d:Ma/XCAT_small_intest_activity/Density         = 1.0 g/cm3
 s:Ma/XCAT_small_intest_activity/DefaultColor        = "Fuchsia"
 
-sv:Ma/XCAT_trach_bronch_activity/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_trach_bronch_activity/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_trach_bronch_activity/Density         = 1.0 g/cm3
+sv:Ma/XCAT_trach_bronch_activity/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_trach_bronch_activity/Fractions      = 9 0.104 0.231 0.028 0.627 0.001 0.002 0.003 0.002 0.002
+d:Ma/XCAT_trach_bronch_activity/Density         = 1.030 g/cm3
 s:Ma/XCAT_trach_bronch_activity/DefaultColor        = "Fuchsia"
 
-sv:Ma/XCAT_Corpus_Callosum_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Corpus_Callosum_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Corpus_Callosum_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Corpus_Callosum_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Corpus_Callosum_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Corpus_Callosum_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Corpus_Callosum_act/DefaultColor      = "Fuchsia"
 
-sv:Ma/XCAT_Caudate_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Caudate_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Caudate_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Caudate_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Caudate_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Caudate_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Caudate_act/DefaultColor      = "Purple"
 
-sv:Ma/XCAT_Internal_capsule_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Internal_capsule_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Internal_capsule_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Internal_capsule_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Internal_capsule_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Internal_capsule_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Internal_capsule_act/DefaultColor         = "Purple"
 
-sv:Ma/XCAT_Putamen_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Putamen_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Putamen_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Putamen_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Putamen_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Putamen_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Putamen_act/DefaultColor      = "Purple"
 
-sv:Ma/XCAT_Globus_pallidus_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Globus_pallidus_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Globus_pallidus_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Globus_pallidus_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Globus_pallidus_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Globus_pallidus_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Globus_pallidus_act/DefaultColor      = "Purple"
 
-sv:Ma/XCAT_Thalamus_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Thalamus_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Thalamus_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Thalamus_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Thalamus_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Thalamus_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Thalamus_act/DefaultColor         = "Purple"
 
-sv:Ma/XCAT_Fornix_act/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Fornix_act/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_Fornix_act/Density        = 1.0 g/cm3
+sv:Ma/XCAT_Fornix_act/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Fornix_act/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Fornix_act/Density        = 1.050 g/cm3
 s:Ma/XCAT_Fornix_act/DefaultColor       = "Purple"
 
-sv:Ma/XCAT_Anterior_commissure_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Anterior_commissure_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Anterior_commissure_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Anterior_commissure_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Anterior_commissure_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Anterior_commissure_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Anterior_commissure_act/DefaultColor      = "Lightblue"
 
-sv:Ma/XCAT_Amygdala_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Amygdala_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Amygdala_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Amygdala_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Amygdala_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Amygdala_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Amygdala_act/DefaultColor         = "Lightblue"
 
-sv:Ma/XCAT_Hippocampus_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Hippocampus_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Hippocampus_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Hippocampus_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Hippocampus_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Hippocampus_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Hippocampus_act/DefaultColor      = "Lightblue"
 
-sv:Ma/XCAT_Lateral_ventricle_act/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Lateral_ventricle_act/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_Lateral_ventricle_act/Density         = 1.0 g/cm3
+sv:Ma/XCAT_Lateral_ventricle_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Lateral_ventricle_act/Fractions      = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Lateral_ventricle_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_Lateral_ventricle_act/DefaultColor        = "Lightblue"
 
-sv:Ma/XCAT_Third_ventricle_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Third_ventricle_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Third_ventricle_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Third_ventricle_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Third_ventricle_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Third_ventricle_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Third_ventricle_act/DefaultColor      = "Lightblue"
 
-sv:Ma/XCAT_Fourth_ventricle_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Fourth_ventricle_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Fourth_ventricle_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Fourth_ventricle_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Fourth_ventricle_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Fourth_ventricle_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Fourth_ventricle_act/DefaultColor         = "Lightblue"
 
-sv:Ma/XCAT_Cerebral_aqueduct_act/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Cerebral_aqueduct_act/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_Cerebral_aqueduct_act/Density         = 1.0 g/cm3
+sv:Ma/XCAT_Cerebral_aqueduct_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Cerebral_aqueduct_act/Fractions      = 29 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Cerebral_aqueduct_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_Cerebral_aqueduct_act/DefaultColor        = "Lightblue"
 
-sv:Ma/XCAT_Mamillary_bodies_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Mamillary_bodies_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Mamillary_bodies_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Mamillary_bodies_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Mamillary_bodies_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Mamillary_bodies_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Mamillary_bodies_act/DefaultColor         = "Pink"
 
-sv:Ma/XCAT_Cerebral_peduncles_act/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Cerebral_peduncles_act/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_Cerebral_peduncles_act/Density        = 1.0 g/cm3
+sv:Ma/XCAT_Cerebral_peduncles_act/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Cerebral_peduncles_act/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Cerebral_peduncles_act/Density        = 1.050 g/cm3
 s:Ma/XCAT_Cerebral_peduncles_act/DefaultColor       = "Pink"
 
-sv:Ma/XCAT_Superior_colliculus_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Superior_colliculus_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Superior_colliculus_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Superior_colliculus_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Superior_colliculus_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Superior_colliculus_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Superior_colliculus_act/DefaultColor      = "Pink"
 
-sv:Ma/XCAT_Inferior_colliculus_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Inferior_colliculus_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Inferior_colliculus_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Inferior_colliculus_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Inferior_colliculus_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Inferior_colliculus_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Inferior_colliculus_act/DefaultColor      = "Pink"
 
-sv:Ma/XCAT_Pineal_gland_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Pineal_gland_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Pineal_gland_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Pineal_gland_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Pineal_gland_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Pineal_gland_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Pineal_gland_act/DefaultColor         = "Pink"
 
-sv:Ma/XCAT_Periacquaductal_grey_outer_act/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Periacquaductal_grey_outer_act/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_Periacquaductal_grey_outer_act/Density        = 1.0 g/cm3
+sv:Ma/XCAT_Periacquaductal_grey_outer_act/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Periacquaductal_grey_outer_act/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Periacquaductal_grey_outer_act/Density        = 1.050 g/cm3
 s:Ma/XCAT_Periacquaductal_grey_outer_act/DefaultColor     = "Pink"
 
-sv:Ma/XCAT_Periacquaductal_grey_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Periacquaductal_grey_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Periacquaductal_grey_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Periacquaductal_grey_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Periacquaductal_grey_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Periacquaductal_grey_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Periacquaductal_grey_act/DefaultColor         = "Orange"
 
-sv:Ma/XCAT_Pons_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Pons_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Pons_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Pons_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Pons_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Pons_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Pons_act/DefaultColor         = "Orange"
 
-sv:Ma/XCAT_Superior_cerebellar_peduncle_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Superior_cerebellar_peduncle_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Superior_cerebellar_peduncle_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Superior_cerebellar_peduncle_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Superior_cerebellar_peduncle_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Superior_cerebellar_peduncle_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Superior_cerebellar_peduncle_act/DefaultColor   = "Orange"
 
-sv:Ma/XCAT_Middle_cerebellar_peduncle_act/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Middle_cerebellar_peduncle_act/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_Middle_cerebellar_peduncle_act/Density        = 1.0 g/cm3
+sv:Ma/XCAT_Middle_cerebellar_peduncle_act/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Middle_cerebellar_peduncle_act/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Middle_cerebellar_peduncle_act/Density        = 1.050 g/cm3
 s:Ma/XCAT_Middle_cerebellar_peduncle_act/DefaultColor     = "Orange"
 
-sv:Ma/XCAT_Substantia_nigra_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Substantia_nigra_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Substantia_nigra_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Substantia_nigra_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Substantia_nigra_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Substantia_nigra_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Substantia_nigra_act/DefaultColor         = "Orange"
 
-sv:Ma/XCAT_Medulla_act/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Medulla_act/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_Medulla_act/Density       = 1.0 g/cm3
+sv:Ma/XCAT_Medulla_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Medulla_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Medulla_act/Density       = 1.050 g/cm3
 s:Ma/XCAT_Medulla_act/DefaultColor      = "Orange"
 
-sv:Ma/XCAT_Medullary_pyramids_act/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Medullary_pyramids_act/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_Medullary_pyramids_act/Density        = 1.0 g/cm3
+sv:Ma/XCAT_Medullary_pyramids_act/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Medullary_pyramids_act/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Medullary_pyramids_act/Density        = 1.050 g/cm3
 s:Ma/XCAT_Medullary_pyramids_act/DefaultColor       = "Orange"
 
-sv:Ma/XCAT_Inferior_olive_act/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Inferior_olive_act/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_Inferior_olive_act/Density        = 1.0 g/cm3
+sv:Ma/XCAT_Inferior_olive_act/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Inferior_olive_act/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Inferior_olive_act/Density        = 1.050 g/cm3
 s:Ma/XCAT_Inferior_olive_act/DefaultColor       = "Brown"
 
-sv:Ma/XCAT_Tegmentum_of_midbrain_act/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Tegmentum_of_midbrain_act/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_Tegmentum_of_midbrain_act/Density         = 1.0 g/cm3
+sv:Ma/XCAT_Tegmentum_of_midbrain_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Tegmentum_of_midbrain_act/Fractions      = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Tegmentum_of_midbrain_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_Tegmentum_of_midbrain_act/DefaultColor        = "Brown"
 
-sv:Ma/XCAT_Midbrain_act/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_Midbrain_act/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_Midbrain_act/Density      = 1.0 g/cm3
+sv:Ma/XCAT_Midbrain_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_Midbrain_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_Midbrain_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Midbrain_act/DefaultColor         = "Brown"
 
-sv:Ma/XCAT_cerebellum_act/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_cerebellum_act/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_cerebellum_act/Density        = 1.0 g/cm3
+sv:Ma/XCAT_cerebellum_act/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_cerebellum_act/Fractions     = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
+d:Ma/XCAT_cerebellum_act/Density        = 1.050 g/cm3
 s:Ma/XCAT_cerebellum_act/DefaultColor       = "Brown"
 
 #uses "brain" composition and density from ICRP P110
