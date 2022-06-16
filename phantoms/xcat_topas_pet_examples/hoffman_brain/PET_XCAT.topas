@@ -1,24 +1,13 @@
-b:Gr/ViewA/Active	= "True"
-b:Gr/ViewB/Active	= "True"
-b:Gr/ViewC/Active	= "True"
-b:Gr/ViewD/Active	= "True"
+b:Gr/ViewA/Active	= "False"
+b:Gr/ViewB/Active	= "False"
+b:Gr/ViewC/Active	= "False"
+b:Gr/ViewD/Active	= "False"
 
 #sv:Ph/Default/Modules = 1 "g4em-standard_opt1"
 #d:Ph/Default/CutForElectron = 0.5 um # overrides CutForAllParticles for Electron
 sv:Ph/Default/Modules = 2 "g4em-standard_opt4" "g4em-penelope"
 
-b:Ts/PauseBeforeQuit = "True"
-
-s:Ge/Center_Water/Parent  	= "AirBox"
-s:Ge/Center_Water/Type    	= "TsCylinder"
-s:Ge/Center_Water/Material	= "G4_WATER"
-d:Ge/Center_Water/Rmax     	= .106 m
-d:Ge/Center_Water/HL		= .2 m
-d:Ge/Center_Water/TransX  	= 0. m
-d:Ge/Center_Water/TransY  	= 0. m
-d:Ge/Center_Water/TransZ  	= 0. m
-#d:Ge/Center_Water/MaxStepSize	= 1. mm
-s:Ge/Center_Water/Color  	= "green"
+b:Ts/PauseBeforeQuit = "False"
 
 s:Ge/World/Material  = "Vacuum"
 d:Ge/World/HLX       = 10.0 m
@@ -34,19 +23,6 @@ d:Ge/AirBox/HLZ	= 10.0 m
 s:Ge/AirBox/Parent	= "world"
 b:Ge/AirBox/Invisible	= "true"
 
-
-
-s:Ge/SphereSource/Type     		= "TsSphere"
-s:Ge/SphereSource/Parent   		= "Center_Water"
-sc:Ge/SphereSource/Material 		= "G4_WATER"
-dc:Ge/SphereSource/RMax     		= 10 mm
-dc:Ge/SphereSource/TransZ   		= 0. cm
-dc:Ge/SphereSource/TransY		= 0. cm
-dc:Ge/SphereSource/TransX		= 09. cm
-s:Ge/SphereSource/color		= "red"
-#d:Ge/SphereSource/MaxStepSize	= 1. um
-s:Ge/SphereSource/DrawingStyle	= "wireframe"
-
 s:Ge/DetectorVolume/Type	= "TsCylinder"
 s:Ge/DetectorVolume/Parent	= "AirBox"
 d:Ge/DetectorVolume/HL		= 1 m
@@ -56,16 +32,15 @@ s:Ge/DetectorVolume/Material	= "G4_WATER"
 #d:Ge/DetectorVolume/MaxStepSize	= 1. mm
 d:Ge/DetectorVolume/MinStepSize 	= 0.01 mm
 
+includeFile = xcat_hoffman_brain.topas
+s:Ge/Patient/Parent   = "AirBox"
+d:Ge/Patient/TransX   = 0. m
+d:Ge/Patient/TransY   = 0. m
+d:Ge/Patient/TransZ   = 0. m
+d:Ge/Patient/RotX     = 0. deg
+d:Ge/Patient/RotY     = 0. deg
+d:Ge/Patient/RotZ     = 0 deg
 
-s:So/Positrons/Type				= "Volumetric"
-s:So/Positrons/Component			= "SphereSource"
-s:So/Positrons/ActiveMaterial			= "G4_WATER"
-s:So/Positrons/BeamParticle			= "e+"
-d:So/Positrons/BeamEnergy			= 0.6335 MeV
-b:So/Positrons/RecursivelyIncludeChildren 	= "True"
-ic:So/Positrons/NumberOfHistoriesInRun 	= 10
-
-i:Ts/ShowHistoryCountAtInterval = 10000
 
 i:Ts/Seed = 26
 #i:Ts/FindSeedForHistory = 8

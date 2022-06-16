@@ -142,7 +142,7 @@ def main():
 	vol_white_matt = 1510*.2773
 
 	#defines the time chunk over which the part of the scan takes place in seconds -- currently set to 30 min
-	time = 30*60
+	time = .0000003
 
 	#begins reading the long string of ratios above and appending corresponding sources to .topas file
 	lines = materials_used.splitlines()
@@ -163,7 +163,7 @@ def main():
 	s:So/''' + tissue + '''Source/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
 	ic:So/''' + tissue + '''Source/NumberOfHistoriesInRun = ''' + str(int(ratio)) + '''				# the number of particles that will be randomly distributed throughout the active material
 	b:So/''' + tissue + '''Source/RecursivelyIncludeChildren = "True"			
-	ic:So/''' + tissue + '''Source/MaxNumberOfPointsToSample = 1000000000000			#1e12 points		
+	ic:So/''' + tissue + '''Source/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
 
 	#defines the energy spectrum of the particles in the source
 	s:So/''' + tissue + '''Source/BeamEnergySpectrumType          = "Discrete"
