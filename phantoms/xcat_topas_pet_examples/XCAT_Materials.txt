@@ -14,7 +14,7 @@
 # trans_li, desc_li
 
 #material compositions and desnities for the below tissues taken from Annals of ICRP P145
-# left_lung, right_lung, spinal_cord 
+# left_lung, right_lung, spinal_cord, prostate, bladder
 
 #kidney components:
 # right_kidney_cortex, left_kidney_cortex, right_kidney_medulla, left_kidney_medulla, right_renal_pelvis
