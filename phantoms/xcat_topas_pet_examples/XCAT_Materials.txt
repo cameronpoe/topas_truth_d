@@ -13,8 +13,8 @@
 # rib, cartilage, pancreas, sm_intestine, asc_li,
 # trans_li, desc_li
 
-#material compositions and desnities for the below tissues taken from Annals of ICRP 
-# left_lung, right_lung
+#material compositions and desnities for the below tissues taken from Annals of ICRP P145
+# left_lung, right_lung, spinal_cord 
 
 #kidney components:
 # right_kidney_cortex, left_kidney_cortex, right_kidney_medulla, left_kidney_medulla, right_renal_pelvis
@@ -199,9 +199,9 @@ uv:Ma/XCAT_spine_activity/Fractions     = 9 .036 .159 .042 .448 .003 .002 .094 .
 d:Ma/XCAT_spine_activity/Density        = 1.920 g/cm3
 s:Ma/XCAT_spine_activity/DefaultColor       = "Yellow"
 
-sv:Ma/XCAT_spinal_cord_activity/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_spinal_cord_activity/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_spinal_cord_activity/Density      = 1.0 g/cm3
+sv:Ma/XCAT_spinal_cord_activity/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_spinal_cord_activity/Fractions   = 9 .105 .251 .027 .607 .001 .002 .003 .002 .002
+d:Ma/XCAT_spinal_cord_activity/Density      = 1.031 g/cm3
 s:Ma/XCAT_spinal_cord_activity/DefaultColor         = "Yellow"
 
 sv:Ma/XCAT_bone_marrow_activity/Components  = 2 "Hydrogen" "Oxygen"
@@ -219,14 +219,14 @@ uv:Ma/XCAT_vein_activity/Fractions      = 2 0.111894 0.888106
 d:Ma/XCAT_vein_activity/Density         = 1.0 g/cm3
 s:Ma/XCAT_vein_activity/DefaultColor        = "Olive"
 
-sv:Ma/XCAT_bladder_activity/Components  = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_bladder_activity/Fractions   = 2 0.111894 0.888106
-d:Ma/XCAT_bladder_activity/Density      = 1.0 g/cm3
+sv:Ma/XCAT_bladder_activity/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_bladder_activity/Fractions   = 9 .105 .096 .026 .761 .002 .002 .002 .003 .003 
+d:Ma/XCAT_bladder_activity/Density      = 1.040 g/cm3
 s:Ma/XCAT_bladder_activity/DefaultColor         = "Olive"
 
-sv:Ma/XCAT_prostate_activity/Components     = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_prostate_activity/Fractions      = 2 0.111894 0.888106
-d:Ma/XCAT_prostate_activity/Density         = 1.0 g/cm3
+sv:Ma/XCAT_prostate_activity/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
+uv:Ma/XCAT_prostate_activity/Fractions      = 9 .105 .251 .027 .607 .001 .002 .003 .002 .002
+d:Ma/XCAT_prostate_activity/Density         = 1.031 g/cm3
 s:Ma/XCAT_prostate_activity/DefaultColor        = "Olive"
 
 sv:Ma/XCAT_asc_li_activity/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
