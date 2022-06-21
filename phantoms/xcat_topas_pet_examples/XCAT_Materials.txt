@@ -13,6 +13,9 @@
 # rib, cartilage, pancreas, sm_intestine, asc_li,
 # trans_li, desc_li
 
+#material compositions and desnities for the below tissues taken from Annals of ICRP 
+# left_lung, right_lung
+
 #kidney components:
 # right_kidney_cortex, left_kidney_cortex, right_kidney_medulla, left_kidney_medulla, right_renal_pelvis
 # left_renal_pelvis
@@ -33,10 +36,10 @@
 # NOTE: for all kidney components, the composition and density of "kidneys" from P110 of ICRP Annals was used
 # NOTE: for asc_li, trans_li, desc_li, the composition and density of "large intestine" fro P110 of ICRP Annals was used
 
-sv:Ma/XCAT_Air/Components 			= 2 "Nitrogen" "Oxygen"
-uv:Ma/XCAT_Air/Fractions  			= 2 0.8 0.2
-d:Ma/XCAT_Air/Density 				= .001 g/cm3
-s:Ma/XCAT_Air/DefaultColor 			= "TransparentBlack"
+sv:Ma/XCAT_background/Components 			= 2 "Nitrogen" "Oxygen"
+uv:Ma/XCAT_background/Fractions  			= 2 0.8 0.2
+d:Ma/XCAT_background/Density 				= .001 g/cm3
+s:Ma/XCAT_background/DefaultColor 			= "TransparentBlack"
 iv:Gr/Color/TransparentBlack = 4 0 0 0 0
 
 #ADDED MANUALLY new - 5.25.22
@@ -145,16 +148,6 @@ sv:Ma/XCAT_gall_bladder_activity/Components     = 9 "Hydrogen" "Carbon" "Nitroge
 uv:Ma/XCAT_gall_bladder_activity/Fractions      = 9 0.104 0.231 0.028 0.627 0.001 0.002 0.003 0.002 0.002
 d:Ma/XCAT_gall_bladder_activity/Density         = 1.030 g/cm3
 s:Ma/XCAT_gall_bladder_activity/DefaultColor        = "Grey"
-
-sv:Ma/XCAT_r_lung_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_r_lung_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_r_lung_activity/Density       = 1.0 g/cm3
-s:Ma/XCAT_r_lung_activity/DefaultColor      = "Red"
-
-sv:Ma/XCAT_l_lung_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_l_lung_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_l_lung_activity/Density       = 1.0 g/cm3
-s:Ma/XCAT_l_lung_activity/DefaultColor      = "Red"
 
 sv:Ma/XCAT_esophagus_activity/Components    = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
 uv:Ma/XCAT_esophagus_activity/Fractions     = 9 0.104 0.213 0.029 0.644 0.001 0.002 0.003 0.002 0.002
@@ -401,14 +394,14 @@ uv:Ma/XCAT_lbreast_activity/Fractions   = 2 0.111894 0.888106
 d:Ma/XCAT_lbreast_activity/Density      = 1.0 g/cm3
 s:Ma/XCAT_lbreast_activity/DefaultColor         = "Blue"
 
-sv:Ma/XCAT_right_lung_activity/Components   = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_right_lung_activity/Fractions    = 2 0.111894 0.888106
-d:Ma/XCAT_right_lung_activity/Density       = 1.0 g/cm3
+sv:Ma/XCAT_right_lung_activity/Components   = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Iron"
+uv:Ma/XCAT_right_lung_activity/Fractions    = 10 .102 .108 .032 .748 .001 .001 .002 .003 .002 .001
+d:Ma/XCAT_right_lung_activity/Density       = 0.415 g/cm3
 s:Ma/XCAT_right_lung_activity/DefaultColor      = "Blue"
 
-sv:Ma/XCAT_left_lung_activity/Components    = 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_left_lung_activity/Fractions     = 2 0.111894 0.888106
-d:Ma/XCAT_left_lung_activity/Density        = 1.0 g/cm3
+sv:Ma/XCAT_left_lung_activity/Components    = 10 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium" "Iron"
+uv:Ma/XCAT_left_lung_activity/Fractions     = 10 .102 .108 .032 .748 .001 .001 .002 .003 .002 .001
+d:Ma/XCAT_left_lung_activity/Density        = 0.415 g/cm3
 s:Ma/XCAT_left_lung_activity/DefaultColor       = "Blue"
 
 sv:Ma/XCAT_esophagus_contents_activity/Components   = 2 "Hydrogen" "Oxygen"
