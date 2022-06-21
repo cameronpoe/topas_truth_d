@@ -4,7 +4,7 @@ import scipy.ndimage as image
 from matplotlib.widgets import Slider
 
 #lacking_3d_version = np.loadtxt("lor_rendering/500000_3cyl.data") MEDDLED
-lacking_3d_version = np.loadtxt("testrender.data") #use the right file name for your purposes
+lacking_3d_version = np.loadtxt("finally.data") #use the right file name for your purposes
 
 third_dim_size = 1
 

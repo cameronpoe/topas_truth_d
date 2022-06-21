@@ -13,7 +13,7 @@ motion_option = 2	# motion_option  (0=beating heart only, 1=respiratory motion o
 
 out_period = 5		# output_period (SECS) (if <= 0, then output_period=time_per_frame*output_frames)
 time_per_frame = 0	# time_per_frame (SECS) (**IGNORED unless output_period<=0**)
-out_frames = 80		# output_frames (# of output time frames )
+out_frames = 2		# output_frames (# of output time frames )
 
 hrt_period = 1			# hrt_period (SECS) (length of beating heart cycle; normal = 1s) see NOTE 3 
 hrt_start_ph_index = 0.0	# hrt_start_phase_index (range=0 to 1; ED=0, ES=0.4) see NOTE 3 
