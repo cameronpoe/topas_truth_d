@@ -6,14 +6,14 @@ s:Tf/NumHistories/Function = "Step"
 dv:Tf/NumHistories/Times = 2 10 20 ms
 iv:Tf/NumHistories/Values = 2 2 8
 
-s:So/Tf/ActiveMaterial/Value/Type            = "Volumetric"
-s:So/Tf/ActiveMaterial/Value/Component       = "Patient"				# specifies that the source is defined for the Patient geometry
-sc:So/Tf/ActiveMaterial/Value/ActiveMaterial = "XCAT_white_matter_act"			# specifies which material within the Patient geometry is active i.e. contain radionuclides
-s:So/Tf/ActiveMaterial/Value/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
-ic:So/Tf/ActiveMaterial/Value/NumberOfHistoriesInRun = Tf/NumHistories/Value				# the number of particles that will be randomly distributed throughout the active material
-b:So/Tf/ActiveMaterial/Value/RecursivelyIncludeChildren = "True"			
-ic:So/Tf/ActiveMaterial/Value/MaxNumberOfPointsToSample = 1000000000			#1e9 points	
+s:So/VaryingSource/Type            = "Volumetric"
+s:So/VaryingSource/Component       = "Patient"				# specifies that the source is defined for the Patient geometry
+sc:So/VaryingSource/ActiveMaterial = Tf/ActiveMaterial/Value			# specifies which material within the Patient geometry is active i.e. contain radionuclides
+s:So/VaryingSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
+ic:So/VaryingSource/NumberOfHistoriesInRun = Tf/NumHistories/Value				# the number of particles that will be randomly distributed throughout the active material
+b:So/VaryingSource/RecursivelyIncludeChildren = "True"			
+ic:So/VaryingSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points	
 
-s:So/Tf/ActiveMaterial/Value/BeamEnergySpectrumType          = "Discrete"
-dv:So/Tf/ActiveMaterial/Value/BeamEnergySpectrumValues       = 1 0 MeV		# currently set to 0 MeV so all the particles are at rest to begin
-uv:So/Tf/ActiveMaterial/Value/BeamEnergySpectrumWeights      = 1 1.0		# defines the percentages of the particles at the respective energy value
+s:So/VaryingSource/BeamEnergySpectrumType          = "Discrete"
+dv:So/VaryingSource/BeamEnergySpectrumValues       = 1 0 MeV		# currently set to 0 MeV so all the particles are at rest to begin
+uv:So/VaryingSource/BeamEnergySpectrumWeights      = 1 1.0		# defines the percentages of the particles at the respective energy value

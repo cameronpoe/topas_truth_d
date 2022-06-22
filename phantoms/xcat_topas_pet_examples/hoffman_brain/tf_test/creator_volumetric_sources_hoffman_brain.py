@@ -133,16 +133,25 @@ def main():
 	f.write('#this is a helper file composed of only volumetric sources over each of the XCAT phantom materials/tissues\n\n')
 
 	#sets the number of histories in tissues with default -1 ratio
-	default_histories = 0
+	default_ratio = 0
 
 	#defines the volumes of the tissues
 	#uses average brain volume of 1510 mL for males 
 	#uses estimate for percentage of grey and white matter from paper by Luders 2002 Brain Size and Grey Matter Volume...
-	vol_grey_matt = 1510*.5441
-	vol_white_matt = 1510*.2773
+	volume_dict = {
+		"XCAT_grey_matter_act": 1510*.5441,
+		"XCAT_white_matter_act": 1510*.2773
+	}
 
-	#defines the time chunk over which the part of the scan takes place in seconds -- currently set to 30 min
+	
+
+	#defines the time chunk over which the part of the scan takes place in seconds
 	time = .0000003
+
+	activematerial_values = ""
+	numhistories_values = ""
+	tf_times = ""
+	tf_count = 0
 
 	#begins reading the long string of ratios above and appending corresponding sources to .topas file
 	lines = materials_used.splitlines()
@@ -151,24 +160,44 @@ def main():
 		tissue = segments[0].strip()
 		ratio = float(segments[1].strip())
 		if ratio < 0:
-			ratio = default_histories
-		elif 'white_matter' in tissue:
-			ratio = ratio*1000*vol_white_matt*time
-		elif 'grey_matter' in tissue:
-			ratio = ratio*1000*vol_grey_matt*time
-		f.write('''#defines a volumetric source over the Patient geometry
-	s:So/''' + tissue + '''Source/Type            = "Volumetric"
-	s:So/''' + tissue + '''Source/Component       = "Patient"				# specifies that the source is defined for the Patient geometry
-	sc:So/''' + tissue + '''Source/ActiveMaterial = "''' + tissue + '''"			# specifies which material within the Patient geometry is active i.e. contain radionuclides
-	s:So/''' + tissue + '''Source/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
-	ic:So/''' + tissue + '''Source/NumberOfHistoriesInRun = ''' + str(int(ratio)) + '''				# the number of particles that will be randomly distributed throughout the active material
-	b:So/''' + tissue + '''Source/RecursivelyIncludeChildren = "True"			
-	ic:So/''' + tissue + '''Source/MaxNumberOfPointsToSample = 1000000000			#1e9 points		
+			ratio = default_ratio
+		if tissue in volume_dict:
+			histories = ratio*1000*time*volume_dict[tissue]
+		else:
+			histories = 0
 
-	#defines the energy spectrum of the particles in the source
-	s:So/''' + tissue + '''Source/BeamEnergySpectrumType          = "Discrete"
-	dv:So/''' + tissue + '''Source/BeamEnergySpectrumValues       = 1 0 MeV		# currently set to 0 MeV so all the particles are at rest to begin
-	uv:So/''' + tissue + '''Source/BeamEnergySpectrumWeights      = 1 1.0		# defines the percentages of the particles at the respective energy value\n\n''')
+		if histories > 0:
+			tf_count+=1
+			activematerial_values = activematerial_values + "\"" + tissue + "\" "
+			numhistories_values = numhistories_values + str(histories) + " "
+			tf_times = tf_times + str(tf_count*10) + " "
+	
+	activematerial_values = str(tf_count) + " " + activematerial_values
+	numhistories_values = str(tf_count) + " " + numhistories_values
+	tf_times = str(tf_count) + " " + tf_times + " ms"
+
+	f.write('''# defines two step functions, one for active materials and one for number of histories
+# crucial for proper formatting of tuple outputs
+s:Tf/ActiveMaterial/Function = "Step"
+dv:Tf/ActiveMaterial/Times = ''' + tf_times + '''
+sv:Tf/ActiveMaterial/Values = ''' + activematerial_values + '''
+
+s:Tf/NumHistories/Function = "Step"
+dv:Tf/NumHistories/Times = ''' + tf_times + '''
+iv:Tf/NumHistories/Values = ''' + numhistories_values + '''\n\n''')
+
+
+	f.write('''s:So/VaryingSource/Type            = "Volumetric"
+s:So/VaryingSource/Component       = "Patient"				# specifies that the source is defined for the Patient geometry
+sc:So/VaryingSource/ActiveMaterial = Tf/ActiveMaterial/Value			# specifies which material within the Patient geometry is active i.e. contain radionuclides
+s:So/VaryingSource/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
+ic:So/VaryingSource/NumberOfHistoriesInRun = Tf/NumHistories/Value				# the number of particles that will be randomly distributed throughout the active material
+b:So/VaryingSource/RecursivelyIncludeChildren = "True"			
+ic:So/VaryingSource/MaxNumberOfPointsToSample = 1000000000			#1e9 points	
+
+s:So/VaryingSource/BeamEnergySpectrumType          = "Discrete"
+dv:So/VaryingSource/BeamEnergySpectrumValues       = 1 0 MeV		# currently set to 0 MeV so all the particles are at rest to begin
+uv:So/VaryingSource/BeamEnergySpectrumWeights      = 1 1.0		# defines the percentages of the particles at the respective energy value''')
 
 	f.close()
 
