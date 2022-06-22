@@ -3,11 +3,11 @@ b:Gr/ViewB/Active	= "False"
 b:Gr/ViewC/Active	= "False"
 b:Gr/ViewD/Active	= "False"
 
+b:Ts/PauseBeforeQuit = "False"
+
 #sv:Ph/Default/Modules = 1 "g4em-standard_opt1"
 #d:Ph/Default/CutForElectron = 0.5 um # overrides CutForAllParticles for Electron
 sv:Ph/Default/Modules = 2 "g4em-standard_opt4" "g4em-penelope"
-
-b:Ts/PauseBeforeQuit = "False"
 
 s:Ge/World/Material  = "Vacuum"
 d:Ge/World/HLX       = 10.0 m
@@ -32,7 +32,8 @@ s:Ge/DetectorVolume/Material	= "G4_WATER"
 #d:Ge/DetectorVolume/MaxStepSize	= 1. mm
 d:Ge/DetectorVolume/MinStepSize 	= 0.01 mm
 
-includeFile = xcat_hoffman_brain.topas
+# inputs patient geometry and positions it
+includeFile = xcat_activity_phantom.topas
 s:Ge/Patient/Parent   = "AirBox"
 d:Ge/Patient/TransX   = 0. m
 d:Ge/Patient/TransY   = 0. m
@@ -40,7 +41,6 @@ d:Ge/Patient/TransZ   = 0. m
 d:Ge/Patient/RotX     = 0. deg
 d:Ge/Patient/RotY     = 0. deg
 d:Ge/Patient/RotZ     = 0 deg
-
 
 i:Ts/Seed = 26
 #i:Ts/FindSeedForHistory = 8
@@ -52,12 +52,12 @@ b:Sc/TruthTuple/PropagateToChildren	= "True"
 s:Sc/TruthTuple/OutputType			= "ASCII"
 s:Sc/TruthTuple/IfOutputFileAlreadyExists	= "Overwrite"
 
-
 s:Sc/DetectorTuple/Quantity			= "MyNtupleEnergy"
 s:Sc/DetectorTuple/Component			= "DetectorVolume"
 b:Sc/DetectorTuple/PropagateToChildren	= "True"
 s:Sc/DetectorTuple/OutputType			= "ASCII"
 s:Sc/DetectorTuple/IfOutputFileAlreadyExists	= "Overwrite"
+
 
 
 
@@ -93,5 +93,6 @@ d:Gr/ViewD/Theta          = 0 deg
 d:Gr/ViewD/Phi            = 0 deg
 u:Gr/ViewD/Zoom	   = 2
 
-
-
+d:Tf/TimelineStart = 0 ms
+i:Tf/NumberOfSequentialTimes = 2
+d:Tf/TimelineEnd = 20 ms

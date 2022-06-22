@@ -34,7 +34,7 @@ d:Ge/Patient/RotZ     = 0 deg
 iv:Ge/Patient/ShowSpecificSlicesY = 4 21  61  101  131
 
 #includes volumetric sources file
-includeFile = tf_test_vol_source.topas
+includeFile = volumetric_sources_hoffman_brain.topas
 
 #defines the pop-up viewer
 s:Gr/ViewA/Type           = "OpenGL"
