@@ -46,7 +46,7 @@ d:Gr/ViewA/Phi            = 10 deg
 # Extra graphics options to handle complex voxel geometries
 i:Gr/ShowOnlyOutlineIfVoxelCountExceeds = 210000000
 
-i:Ts/ShowHistoryCountAtInterval = 1000000
+i:Ts/ShowHistoryCountAtInterval = 1000000000
 
 b:Ts/PauseBeforeQuit = "True"
 
