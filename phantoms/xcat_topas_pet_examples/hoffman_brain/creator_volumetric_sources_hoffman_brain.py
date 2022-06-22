@@ -162,7 +162,7 @@ def main():
 		if ratio < 0:
 			ratio = default_ratio
 		if tissue in volume_dict:
-			histories = ratio*1000*time*volume_dict[tissue]
+			histories = int(int((ratio*1000*time*volume_dict[tissue])*100)/100)
 		else:
 			histories = 0
 
