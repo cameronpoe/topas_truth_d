@@ -7,6 +7,8 @@ s:Ge/Patient/ImagingToMaterialConverter = "XCAT_Activity"		# I think it can be "
 # includes separate definitions of all materials in the XCAT phantom written in TOPAS
 s:Ge/Patient/DataType = "FLOAT"						# sets the data type for each voxel of the patient to be a float
 
+includeFile = /mnt/c/Users/camer/topaspet-github/topas_truth_d/phantoms/xcat_topas_pet_examples/XCAT_Materials.txt
+
 #defines the World
 s:Ge/World/Material    = "G4_AIR"
 d:Ge/World/HLX         = 1.5 m

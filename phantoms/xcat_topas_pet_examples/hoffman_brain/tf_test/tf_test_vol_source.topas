@@ -1,5 +1,3 @@
-includeFile = /mnt/c/Users/camer/topaspet-github/topas_truth_d/phantoms/xcat_topas_pet_examples/XCAT_Materials.txt
-
 s:Tf/ActiveMaterial/Function = "Step"
 dv:Tf/ActiveMaterial/Times = 2 10 20 ms
 sv:Tf/ActiveMaterial/Values = 2 "XCAT_white_matter_act" "XCAT_grey_matter_act"
