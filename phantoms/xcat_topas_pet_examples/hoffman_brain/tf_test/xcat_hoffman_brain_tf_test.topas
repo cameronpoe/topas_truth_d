@@ -1,0 +1,56 @@
+#creates Patient geometry
+s:Ge/Patient/Type		= "TsImageCube"
+s:Ge/Patient/InputDirectory	= "/mnt/c/Users/camer/"
+s:Ge/Patient/InputFile		= "Desktop/xcat_full_body.out_act_1.bin"		# inputs binary XCAT activity file	
+s:Ge/Patient/MetaDataFile	= "Desktop/xcat_full_body.out_log"			# inputs XCAT log file aka meta data file
+s:Ge/Patient/ImagingToMaterialConverter = "XCAT_Activity"		# I think it can be "XCAT_Attenuation" or "XCAT_Activity"		
+# includes separate definitions of all materials in the XCAT phantom written in TOPAS
+s:Ge/Patient/DataType = "FLOAT"						# sets the data type for each voxel of the patient to be a float
+
+#defines the World
+s:Ge/World/Material    = "G4_AIR"
+d:Ge/World/HLX         = 1.5 m
+d:Ge/World/HLY         = 1.5 m
+d:Ge/World/HLZ         = 1.5 m
+b:Ge/World/Invisible   = "TRUE"
+
+#defines the Patient geometry spatially
+s:Ge/Patient/Parent   = "World"
+d:Ge/Patient/TransX   = 0. m
+d:Ge/Patient/TransY   = 0. m
+d:Ge/Patient/TransZ   = 0. m
+d:Ge/Patient/RotX     = 0. deg
+d:Ge/Patient/RotY     = 0. deg
+d:Ge/Patient/RotZ     = 0 deg
+
+# Specify which slices to show.
+# Comment this out or set to zero to show all slices.
+# Set to -1 to show only center slice.
+# Set to -2 to show first, center and last slice.
+#iv:Ge/Patient/ShowSpecificSlicesX = 1 -2
+#iv:Ge/Patient/ShowSpecificSlicesY = 1 -2
+iv:Ge/Patient/ShowSpecificSlicesY = 4 21  61  101  131
+
+#includes volumetric sources file
+includeFile = tf_test_vol_source.topas
+
+#defines the pop-up viewer
+s:Gr/ViewA/Type           = "OpenGL"
+i:Gr/ViewA/WindowSizeX    = 900
+i:Gr/ViewA/WindowSizeY    = 900
+d:Gr/ViewA/Theta          = 60 deg
+d:Gr/ViewA/Phi            = 10 deg
+
+# Extra graphics options to handle complex voxel geometries
+i:Gr/ShowOnlyOutlineIfVoxelCountExceeds = 210000000
+
+i:Ts/ShowHistoryCountAtInterval = 1000000
+
+b:Ts/PauseBeforeQuit = "True"
+
+#Ts/UseQt = "True"
+
+
+
+
+

@@ -1,0 +1,97 @@
+b:Gr/ViewA/Active	= "False"
+b:Gr/ViewB/Active	= "False"
+b:Gr/ViewC/Active	= "False"
+b:Gr/ViewD/Active	= "False"
+
+#sv:Ph/Default/Modules = 1 "g4em-standard_opt1"
+#d:Ph/Default/CutForElectron = 0.5 um # overrides CutForAllParticles for Electron
+sv:Ph/Default/Modules = 2 "g4em-standard_opt4" "g4em-penelope"
+
+b:Ts/PauseBeforeQuit = "False"
+
+s:Ge/World/Material  = "Vacuum"
+d:Ge/World/HLX       = 10.0 m
+d:Ge/World/HLY       = 10.0 m
+d:Ge/World/HLZ       = 10.0 m
+b:Ge/World/Invisible = "TRUE"
+
+s:Ge/AirBox/Material	= "Air"
+s:Ge/AirBox/Type    	= "TsBox"
+d:Ge/AirBox/HLX	= 10.0 m
+d:Ge/AirBox/HLY	= 10.0 m
+d:Ge/AirBox/HLZ	= 10.0 m
+s:Ge/AirBox/Parent	= "world"
+b:Ge/AirBox/Invisible	= "true"
+
+s:Ge/DetectorVolume/Type	= "TsCylinder"
+s:Ge/DetectorVolume/Parent	= "AirBox"
+d:Ge/DetectorVolume/HL		= 1 m
+d:Ge/DetectorVolume/RMin	= 0.39 m
+d:Ge/DetectorVolume/RMax	= 0.69 m
+s:Ge/DetectorVolume/Material	= "G4_WATER"
+#d:Ge/DetectorVolume/MaxStepSize	= 1. mm
+d:Ge/DetectorVolume/MinStepSize 	= 0.01 mm
+
+includeFile = xcat_hoffman_brain_tf_test.topas
+s:Ge/Patient/Parent   = "AirBox"
+d:Ge/Patient/TransX   = 0. m
+d:Ge/Patient/TransY   = 0. m
+d:Ge/Patient/TransZ   = 0. m
+d:Ge/Patient/RotX     = 0. deg
+d:Ge/Patient/RotY     = 0. deg
+d:Ge/Patient/RotZ     = 0 deg
+
+i:Ts/Seed = 26
+#i:Ts/FindSeedForHistory = 8
+#s:Ts/SeedFile = "TopasSeedForRun_0_History_8.txt"
+
+s:Sc/TruthTuple/Quantity			= "MyNtupleEnergy"
+s:Sc/TruthTuple/Component			= "AirBox"
+b:Sc/TruthTuple/PropagateToChildren	= "True"
+s:Sc/TruthTuple/OutputType			= "ASCII"
+s:Sc/TruthTuple/IfOutputFileAlreadyExists	= "Overwrite"
+
+
+s:Sc/DetectorTuple/Quantity			= "MyNtupleEnergy"
+s:Sc/DetectorTuple/Component			= "DetectorVolume"
+b:Sc/DetectorTuple/PropagateToChildren	= "True"
+s:Sc/DetectorTuple/OutputType			= "ASCII"
+s:Sc/DetectorTuple/IfOutputFileAlreadyExists	= "Overwrite"
+
+
+
+s:Gr/ViewA/Type           = "OpenGL"
+sv:Gr/ViewA/VisibleWorlds = 1 "All"
+i:Gr/ViewA/WindowSizeX    = 900
+i:Gr/ViewA/WindowSizeY    = 900
+d:Gr/ViewA/Theta          = 45 deg
+d:Gr/ViewA/Phi            = 0 deg
+u:Gr/ViewA/Zoom	   = 5
+
+s:Gr/ViewB/Type           = "OpenGL"
+sv:Gr/ViewB/VisibleWorlds = 1 "All"
+i:Gr/ViewB/WindowSizeX    = 900
+i:Gr/ViewB/WindowSizeY    = 900
+d:Gr/ViewB/Theta          = 45 deg
+d:Gr/ViewB/Phi            = 45 deg
+u:Gr/ViewB/Zoom	   = 1
+
+s:Gr/ViewC/Type           = "OpenGL"
+sv:Gr/ViewC/VisibleWorlds = 1 "All"
+i:Gr/ViewC/WindowSizeX    = 900
+i:Gr/ViewC/WindowSizeY    = 900
+d:Gr/ViewC/Theta          = 90 deg
+d:Gr/ViewC/Phi            = 0 deg
+u:Gr/ViewC/Zoom	   = 40
+
+s:Gr/ViewD/Type           = "OpenGL"
+sv:Gr/ViewD/VisibleWorlds = 1 "All"
+i:Gr/ViewD/WindowSizeX    = 900
+i:Gr/ViewD/WindowSizeY    = 900
+d:Gr/ViewD/Theta          = 0 deg
+d:Gr/ViewD/Phi            = 0 deg
+u:Gr/ViewD/Zoom	   = 2
+
+d:Tf/TimelineStart = 0 ms
+i:Tf/NumberOfSequentialTimes = 2
+d:Tf/TimelineEnd = 20 ms

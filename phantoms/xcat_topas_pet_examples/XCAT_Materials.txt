@@ -36,17 +36,17 @@
 # NOTE: for all kidney components, the composition and density of "kidneys" from P110 of ICRP Annals was used
 # NOTE: for asc_li, trans_li, desc_li, the composition and density of "large intestine" fro P110 of ICRP Annals was used
 
+iv:Gr/Color/TransparentBlack = 4 0 0 0 0
+
 sv:Ma/XCAT_background/Components 			= 2 "Nitrogen" "Oxygen"
 uv:Ma/XCAT_background/Fractions  			= 2 0.8 0.2
 d:Ma/XCAT_background/Density 				= .001 g/cm3
 s:Ma/XCAT_background/DefaultColor 			= "TransparentBlack"
-iv:Gr/Color/TransparentBlack = 4 0 0 0 0
 
 sv:Ma/XCAT_Air/Components 			= 2 "Nitrogen" "Oxygen"
 uv:Ma/XCAT_Air/Fractions  			= 2 0.8 0.2
 d:Ma/XCAT_Air/Density 				= .001 g/cm3
 s:Ma/XCAT_Air/DefaultColor 			= "TransparentBlack"
-iv:Gr/Color/TransparentBlack = 4 0 0 0 0
 
 #ADDED MANUALLY new - 5.25.22
 sv:Ma/XCAT_skin_activity/Components 		= 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
@@ -536,7 +536,7 @@ d:Ma/XCAT_Fourth_ventricle_act/Density      = 1.050 g/cm3
 s:Ma/XCAT_Fourth_ventricle_act/DefaultColor         = "Lightblue"
 
 sv:Ma/XCAT_Cerebral_aqueduct_act/Components     = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
-uv:Ma/XCAT_Cerebral_aqueduct_act/Fractions      = 29 .107 .143 .023 .713 .002 .004 .002 .003 .003
+uv:Ma/XCAT_Cerebral_aqueduct_act/Fractions      = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
 d:Ma/XCAT_Cerebral_aqueduct_act/Density         = 1.050 g/cm3
 s:Ma/XCAT_Cerebral_aqueduct_act/DefaultColor        = "Lightblue"
 

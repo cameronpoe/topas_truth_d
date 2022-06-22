@@ -1,0 +1,21 @@
+includeFile = /mnt/c/Users/camer/topaspet-github/topas_truth_d/phantoms/xcat_topas_pet_examples/XCAT_Materials.txt
+
+s:Tf/ActiveMaterial/Function = "Step"
+dv:Tf/ActiveMaterial/Times = 2 10 20 ms
+sv:Tf/ActiveMaterial/Values = 2 "XCAT_white_matter_act" "XCAT_grey_matter_act"
+
+s:Tf/NumHistories/Function = "Step"
+dv:Tf/NumHistories/Times = 2 10 20 ms
+iv:Tf/NumHistories/Values = 2 2 8
+
+s:So/Tf/ActiveMaterial/Value/Type            = "Volumetric"
+s:So/Tf/ActiveMaterial/Value/Component       = "Patient"				# specifies that the source is defined for the Patient geometry
+sc:So/Tf/ActiveMaterial/Value/ActiveMaterial = "XCAT_white_matter_act"			# specifies which material within the Patient geometry is active i.e. contain radionuclides
+s:So/Tf/ActiveMaterial/Value/BeamParticle    = "e+"					# tells which particle will be distributed throughout the active material
+ic:So/Tf/ActiveMaterial/Value/NumberOfHistoriesInRun = Tf/NumHistories/Value				# the number of particles that will be randomly distributed throughout the active material
+b:So/Tf/ActiveMaterial/Value/RecursivelyIncludeChildren = "True"			
+ic:So/Tf/ActiveMaterial/Value/MaxNumberOfPointsToSample = 1000000000			#1e9 points	
+
+s:So/Tf/ActiveMaterial/Value/BeamEnergySpectrumType          = "Discrete"
+dv:So/Tf/ActiveMaterial/Value/BeamEnergySpectrumValues       = 1 0 MeV		# currently set to 0 MeV so all the particles are at rest to begin
+uv:So/Tf/ActiveMaterial/Value/BeamEnergySpectrumWeights      = 1 1.0		# defines the percentages of the particles at the respective energy value
