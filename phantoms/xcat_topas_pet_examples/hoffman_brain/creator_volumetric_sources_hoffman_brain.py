@@ -146,7 +146,7 @@ def main():
 	
 
 	#defines the time chunk over which the part of the scan takes place in seconds
-	time = .1
+	time = .000001
 
 	activematerial_values = ""
 	numhistories_values = ""
