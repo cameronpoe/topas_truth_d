@@ -54,10 +54,10 @@ uv:Ma/XCAT_skin_activity/Fractions  		= 9 .1 .199 .042 .65 .002 .001 .002 .003 .
 d:Ma/XCAT_skin_activity/Density 		= 1.090 g/cm3
 s:Ma/XCAT_skin_activity/DefaultColor 		= "TransparentBlack"
 
-sv:Ma/XCAT_yellow_bone_marrow_activity/Components 			= 2 "Hydrogen" "Oxygen"
-uv:Ma/XCAT_yellow_bone_marrow_activity/Fractions  			= 2 0.111894 0.888106
-d:Ma/XCAT_yellow_bone_marrow_activity/Density 			= 1.0 g/cm3
-s:Ma/XCAT_yellow_bone_marrow_activity/DefaultColor 			= "orange"
+sv:Ma/XCAT_yellow_marrow_activity/Components 			= 2 "Hydrogen" "Oxygen"
+uv:Ma/XCAT_yellow_marrow_activity/Fractions  			= 2 0.111894 0.888106
+d:Ma/XCAT_yellow_marrow_activity/Density 			= 1.0 g/cm3
+s:Ma/XCAT_yellow_marrow_activity/DefaultColor 			= "orange"
 
 sv:Ma/XCAT_penis_activity/Components 		= 2 "Hydrogen" "Oxygen"
 uv:Ma/XCAT_penis_activity/Fractions  		= 2 0.111894 0.888106
