@@ -240,7 +240,7 @@ activity_unit = 0	# activity units (1= scale by voxel volume (multiply activity 
 yellow_bone_marrow_activity = 1	# activity value for the yellow marrow
 								# CHANGED: MOVED FROM YELLOW MARROW SECTION
 
-myoLV_act = 2		# hrt_myoLV_act - activity in left ventricle myocardium
+myoLV_act = 2.001		# hrt_myoLV_act - activity in left ventricle myocardium
 myoRV_act = 3		# hrt_myoRV_act - activity in right ventricle myocardium
 myoLA_act = 4		# hrt_myoLA_act - activity in left atrium myocardium
 myoRA_act = 5		# hrt_myoRA_act - activity in right atrium myocardium

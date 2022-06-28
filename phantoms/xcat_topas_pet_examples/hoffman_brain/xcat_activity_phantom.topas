@@ -1,8 +1,8 @@
 #creates Patient geometry
 s:Ge/Patient/Type		= "TsImageCube"
 s:Ge/Patient/InputDirectory	= "/mnt/c/Users/camer/"
-s:Ge/Patient/InputFile		= "Desktop/combined_xcat/xcat_full_body.out_act_1.bin"		# inputs binary XCAT activity file	
-s:Ge/Patient/MetaDataFile	= "Desktop/combined_xcat/xcat_full_body.out_log"			# inputs XCAT log file aka meta data file
+s:Ge/Patient/InputFile		= "xcat/xcat_final.out_act_1.bin"		# inputs binary XCAT activity file	
+s:Ge/Patient/MetaDataFile	= "xcat/xcat_final.out_log"			# inputs XCAT log file aka meta data file
 s:Ge/Patient/ImagingToMaterialConverter = "XCAT_Activity"		# I think it can be "XCAT_Attenuation" or "XCAT_Activity"		
 # includes separate definitions of all materials in the XCAT phantom written in TOPAS
 s:Ge/Patient/DataType = "FLOAT"						# sets the data type for each voxel of the patient to be a float

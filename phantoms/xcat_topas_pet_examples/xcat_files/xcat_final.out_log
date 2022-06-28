@@ -52,8 +52,7 @@ ldiaph_scale =       1.0000
  pixel width =  0.1500 (cm/pixel)
  slice width =  0.1500 (cm/pixel)
  voxel volume (pixel width^2)(slice_width) =  0.003375 ml
- x_array_size = 256
- y_array_size = 256
+ array_size = 256
  subvoxel_index = 1 => 1 subvoxels per voxel
  starting slice number    = 1
  ending slice number      = 1200
@@ -134,7 +133,7 @@ Linear Attenuation Coefficients (1/pixel):
 Activity Ratios
 -----------------------------------------------------------------
 background = 0.000000
-myoLV_act = 2.000000
+myoLV_act = 2.001000
 myoRV_act = 3.000000
 myoLA_act = 4.000000
 myoRA_act = 5.000000
@@ -613,6 +612,6 @@ Volume of RA chamber    =    52.621742 ml
 Volume of TOTAL HEART   =   916.768212 ml
 
 Maximum activity per voxel =     113.000000
-Total activity = 440606334.000000
+Total activity = 440606368.807477
 
-Saving activity phantom in file : xcat_full_body.out_act_1
+Saving activity phantom in file : xcat_final.out_act_1
