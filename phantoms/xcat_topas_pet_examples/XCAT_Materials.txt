@@ -629,10 +629,10 @@ s:Ma/XCAT_cerebellum_act/DefaultColor       = "Brown"
 sv:Ma/XCAT_white_matter_act/Components  = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
 uv:Ma/XCAT_white_matter_act/Fractions   = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
 d:Ma/XCAT_white_matter_act/Density      = 1.050 g/cm3
-s:Ma/XCAT_white_matter_act/DefaultColor         = "Brown"
+s:Ma/XCAT_white_matter_act/DefaultColor         = "Lightblue"
 
 #uses "brain" composition and density from ICRP P110
 sv:Ma/XCAT_grey_matter_act/Components   = 9 "Hydrogen" "Carbon" "Nitrogen" "Oxygen" "Sodium" "Phosphorus" "Sulfur" "Chlorine" "Potassium"
 uv:Ma/XCAT_grey_matter_act/Fractions    = 9 .107 .143 .023 .713 .002 .004 .002 .003 .003
 d:Ma/XCAT_grey_matter_act/Density       = 1.050 g/cm3
-s:Ma/XCAT_grey_matter_act/DefaultColor      = "Brown"
+s:Ma/XCAT_grey_matter_act/DefaultColor      = "Red"
