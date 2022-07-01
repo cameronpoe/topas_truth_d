@@ -18,7 +18,7 @@ distance = 0.0
 non_zero_diff = 0
 difference = 0.0
 energy_deposited = -1.0
-data = pd.DataFrame(columns=['Starting Energy (keV)', 'Final Energy (keV)', 'Distance Travelled (cm)'])
+data = pd.DataFrame(columns=['starte', 'finale', 'diste'])
 
 # iterates through the different event lines
 for line in tup_lines:
@@ -44,17 +44,27 @@ if not difference == 0.0:
     non_zero_diff += 1
 data = data.drop(0)
 
-hist_starte = data.plot.hist(column=['Starting Energy (keV)'], range=[0.0, 650.0], bins=1300)
-fig1 = hist_starte.get_figure()
-fig1.savefig(os.path.join(ROOT_DIR, "fig1.png"))
 
-hist_finale = data.plot.hist(column=['Final Energy (keV)'], range = [0.0, 50.0], bins=100)
-fig2 = hist_finale.get_figure()
-fig2.savefig(os.path.join(ROOT_DIR, "fig2.png"))
+plt.hist(data["diste"], range=(0.0, 0.25), bins=50)
+plt.title('Frequency of Absolute Distances from Positron Annihilation Point and Origin Point', wrap=True)
+plt.xticks()
+plt.locator_params(axis='y', integer=True)
+plt.ylabel('Frequency (# of positrons)')
+plt.xlabel('Distance (cm)')
+plt.savefig('absdist.png')
 
-hist_distance = data.plot.hist(column=['Distance Travelled (cm)'], bins=100, range=[0.0, .5])
-fig3 = hist_distance.get_figure()
-fig3.savefig(os.path.join(ROOT_DIR, "fig3.png"))
+
+#hist_starte = data.plot.hist(column=['Starting Energy (keV)'], range=[0.0, 650.0], bins=1300)
+#fig1 = hist_starte.get_figure()
+#fig1.savefig(os.path.join(ROOT_DIR, "fig1.png"))
+
+#hist_finale = data.plot.hist(column=['Final Energy (keV)'], range = [0.0, 50.0], bins=100)
+#fig2 = hist_finale.get_figure()
+#fig2.savefig(os.path.join(ROOT_DIR, "fig2.png"))
+
+#hist_distance = data.plot.hist(column=['Distance Travelled (cm)'], title='Frequency of Distances from Positron Origin Point', xlabel='Distance (cm)', ylabel='Frequency (# of positrons)', bins=100, xlim=[0.0, .25])
+#fig3 = hist_distance.get_figure()
+#fig3.savefig(os.path.join(ROOT_DIR, "fig3.png"))
 
 print('Number of positrons found: ' + str(num_positrons))
 print(data)
