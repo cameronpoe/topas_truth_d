@@ -8,7 +8,7 @@ sv:Tf/ActiveMaterial/Values = 2 "XCAT_white_matter_act" "XCAT_grey_matter_act"
 
 s:Tf/NumHistories/Function = "Step"
 dv:Tf/NumHistories/Times = 2 10 20  ms
-iv:Tf/NumHistories/Values = 2 48362 379575 
+iv:Tf/NumHistories/Values = 2 714635 1186433 
 
 s:So/VaryingSource/Type            = "Volumetric"
 s:So/VaryingSource/Component       = "Patient"				# specifies that the source is defined for the Patient geometry

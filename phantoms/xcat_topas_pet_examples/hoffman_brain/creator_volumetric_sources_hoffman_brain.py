@@ -139,14 +139,14 @@ def main():
 	#uses average brain volume of 1510 mL for males 
 	#uses estimate for percentage of grey and white matter from paper by Luders 2002 Brain Size and Grey Matter Volume...
 	volume_dict = {
-		"XCAT_grey_matter_act": 1510*.5441,
-		"XCAT_white_matter_act": 1510*.2773
+		"XCAT_white_matter_act": 618.732,
+		"XCAT_grey_matter_act": 256.80375
 	}
 
 	
 
 	#defines the time chunk over which the part of the scan takes place in seconds
-	time = .014
+	time = .14
 
 	activematerial_values = ""
 	numhistories_values = ""

@@ -52,7 +52,8 @@ ldiaph_scale =       1.0000
  pixel width =  0.1500 (cm/pixel)
  slice width =  0.1500 (cm/pixel)
  voxel volume (pixel width^2)(slice_width) =  0.003375 ml
- array_size = 256
+ x_array_size = 450
+ y_array_size = 450
  subvoxel_index = 1 => 1 subvoxels per voxel
  starting slice number    = 1
  ending slice number      = 1200
@@ -133,7 +134,7 @@ Linear Attenuation Coefficients (1/pixel):
 Activity Ratios
 -----------------------------------------------------------------
 background = 0.000000
-myoLV_act = 2.001000
+myoLV_act = 2.000000
 myoRV_act = 3.000000
 myoLA_act = 4.000000
 myoRA_act = 5.000000
@@ -249,7 +250,7 @@ lesn_activity = 80.000000
 
 ---------------------------------------------------------
 Phantom rotation
-----Center of Rotation = 196.738770, 192.000000, 900.000000 mms
+----Center of Rotation = 342.238800, 337.500031, 900.000000 mms
 ----Angles (x, y, z) = 0.000000 0.000000 180.000000 degrees
 
 ---------------------------------------------------------
@@ -264,7 +265,7 @@ Head
 Chest
   Short axis (AP)     232.1896 mm
   Long axis (LAT)     325.2440 mm
-  Circumference       993.6164 mm
+  Circumference       993.6165 mm
 Waist
   Short axis (AP)     233.3064 mm
   Long axis (LAT)     288.9887 mm
@@ -273,7 +274,7 @@ Arms
 Arms (upper, midpoint)
   Short axis (AP)     110.1922 mm
   Long axis (LAT)      95.3863 mm
-  Circumference       333.3551 mm
+  Circumference       333.3550 mm
 Arms (lower, midpoint)
   Short axis (AP)      76.1145 mm
   Long axis (LAT)      66.7673 mm
@@ -289,7 +290,7 @@ Legs (Calf, below knee)
   Long axis (LAT)     105.7886 mm
   Circumference       332.0074 mm
 Rib Cage
-  Short axis (AP)     194.1303 mm
+  Short axis (AP)     194.1304 mm
   Long axis (LAT)     262.5328 mm
 Right Diaphragm
   Height               97.0000 mm
@@ -307,7 +308,7 @@ Breasts (supine)
 ----------------Heart Orientation Angles-------------
   YX_rotation -52.055756
   XZ_rotation -27.128571
-  ZY_rotation -104.385391
+  ZY_rotation -104.385361
 -----------------------------------------------------
 -------------LV Size (Diastole)----------
   Length	     96.5130 mm's
@@ -318,11 +319,11 @@ Breasts (supine)
   Radius         28.6712 mm's
 -----------------------------------------
 -------------LV Volumes at Different Phases----------
-  V1 (end-diastole)               132.1859 mL
-  V2 (end-systole)                 50.5651 mL
-  V3 (beg. quiet phase)            82.7741 mL
+  V1 (end-diastole)               132.1858 mL
+  V2 (end-systole)                 50.5650 mL
+  V3 (beg. quiet phase)            82.7742 mL
   V4 (end quiet phase)            109.7526 mL
-  V5 (red. filling, diastole)     123.3906 mL
+  V5 (red. filling, diastole)     123.3907 mL
 -----------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
@@ -337,27 +338,28 @@ diaphragm motion    =    0.00 mm
 delta AP diameter =    0.00 mm
 
 
-Lung density correction factors: rlung = 2.038947 llung = 2.020340
+Lung density correction factors: rlung = 2.038948 llung = 2.020341
 
 ORGAN VOLUMES: 
-Total         =  71474.059160 ml
-skin          =   2453.189858 ml
-skeleton      =   4149.427894 ml
-muscle        =  26675.162157 ml
-cartilage     =    274.883651 ml
-arteries      =    293.544028 ml
-veins         =    477.771795 ml
-lung tree     =     57.121880 ml
-marrow         =   2276.670591 ml
-intestinal air =    778.788074 ml
-small intestine =    948.007215 ml
+Total         =  78859.001986 ml
+skin          =   3188.791428 ml
+skeleton      =   4713.079947 ml
+muscle        =  29001.360878 ml
+cartilage     =    274.880276 ml
+arteries      =    356.781409 ml
+veins         =    567.381429 ml
+lung tree     =     33.135753 ml
+marrow         =   2422.106105 ml
+airway air =     24.009752 ml
+intestinal air =    778.791449 ml
+small intestine =    948.003840 ml
 large intestine =    596.598807 ml
-salivary glands =     96.484509 ml
+salivary glands =    100.551385 ml
 stomach contents =    216.327396 ml
 esophagus contents =     28.927128 ml
 right kidney =    159.414765 ml
 left kidney =    160.498140 ml
-larynx =     35.916753 ml
+larynx =     36.291378 ml
 penis         =     46.028400 ml
 prostate         =     17.330505 ml
 r_testis         =     19.604649 ml
@@ -370,19 +372,19 @@ r_epididymus         =      3.526913 ml
 l_epididymus         =      3.506663 ml
 ejac_duct         =      0.357750 ml
 penis_inner         =     71.741440 ml
-brain         =    155.348206 ml
-Cerebellum         =    112.990097 ml
+brain         =    155.182968 ml
+Cerebellum         =    112.966492 ml
 Frontal_left         =     54.951187 ml
-Frontal_right         =     63.674789 ml
-Parietal_left         =     17.178671 ml
+Frontal_right         =     63.678165 ml
+Parietal_left         =     17.182045 ml
 Parietal_right         =     17.833246 ml
 Temporal_left         =     39.266258 ml
-Temporal_right         =     38.398624 ml
+Temporal_right         =     38.402000 ml
 Occipital_left         =     13.287567 ml
 Occipital_right1         =     12.207550 ml
-Frontal_lobe_left         =    150.124680 ml
-Frontal_lobe_right         =    134.760971 ml
-Parietal_lobe_left         =     73.474747 ml
+Frontal_lobe_left         =    150.128052 ml
+Frontal_lobe_right         =    134.757599 ml
+Parietal_lobe_left         =     73.471375 ml
 Parietal_lobe_right         =     65.071243 ml
 Temporal_lobe_left         =     60.693775 ml
 Temporal_lobe_right         =     59.461533 ml
@@ -413,16 +415,17 @@ Lateral_ventricle_right         =      6.318082 ml
 Third_ventricle         =      1.616633 ml
 Third_ventricle         =      0.067500 ml
 Fourth_ventricle         =      1.863012 ml
+Periacquaductal_grey_outer         =      0.111375 ml
+Periacquaductal_grey         =      0.054000 ml
+Cerebral_aqueduct         =      0.168750 ml
 Mamillary_bodies         =      0.334125 ml
 Cerebral_peduncles         =      1.140751 ml
 Cerebral_peduncles         =      1.161001 ml
-Superior_colliculus         =      0.290250 ml
-Inferior_colliculus         =      0.320625 ml
+Superior_colliculus         =      0.337500 ml
+Inferior_colliculus         =      0.401625 ml
 Pineal_gland         =      0.212625 ml
-Periacquaductal_grey_outer         =      0.263250 ml
-Periacquaductal_grey         =      0.199125 ml
 Pons         =      8.991124 ml
-Superior_cerebellar_peduncle         =      0.647999 ml
+Superior_cerebellar_peduncle         =      0.644624 ml
 Superior_cerebellar_peduncle         =      0.634499 ml
 Middle_cerebellar_peduncle         =      2.882278 ml
 Middle_cerebellar_peduncle         =      2.595399 ml
@@ -436,10 +439,10 @@ Inferior_olive         =      0.431999 ml
 Tegmentum_of_midbrain         =      3.665291 ml
 Midbrain         =      5.089563 ml
 basilar         =      0.391500 ml
-vertebral_left         =      0.435374 ml
-vertebral_right         =      0.236250 ml
+vertebral_left         =      0.469124 ml
+vertebral_right         =      0.249750 ml
 posterior_inferior_cerebellar_right         =      0.212625 ml
-anterior_inferior_cerebellar_left         =      0.158625 ml
+anterior_inferior_cerebellar_left         =      0.155250 ml
 anterior_inferior_cerebellar_right         =      0.135000 ml
 superior_cerebellar_left         =      0.162000 ml
 superior_cerebellar_right         =      0.111375 ml
@@ -473,7 +476,7 @@ frontopolar_right         =      0.259875 ml
 mediomedial_frontal_left         =      0.006750 ml
 mediomedial_frontal_left         =      0.226125 ml
 mediomedial_frontal_right         =      0.266625 ml
-posteromedial_frontal_left         =      0.374625 ml
+posteromedial_frontal_left         =      0.384750 ml
 posteromedial_frontal_right         =      0.351000 ml
 posteromedial_frontal_right         =      0.084375 ml
 paracentral_left         =      0.121500 ml
@@ -482,23 +485,23 @@ paracentral_right         =      0.189000 ml
 paracentral_right         =      0.158625 ml
 paracentral_right         =      0.310500 ml
 temporal_polar_left         =      0.064125 ml
-temporal_polar_right         =      0.158625 ml
+temporal_polar_right         =      0.168750 ml
 middle_cerebral_M1_left         =      0.361125 ml
 middle_cerebral_M1_right         =      0.195750 ml
 middle_cerebral_M2_left         =      0.087750 ml
 middle_cerebral_M2_right         =      0.243000 ml
-middle_cerebral_M3_left         =      0.074250 ml
+middle_cerebral_M3_left         =      0.128250 ml
 middle_cerebral_M3_left         =      0.054000 ml
 middle_cerebral_M3_left         =      0.165375 ml
-middle_cerebral_M3_left         =      0.644624 ml
-middle_cerebral_M3_right         =      0.060750 ml
+middle_cerebral_M3_left         =      0.715499 ml
+middle_cerebral_M3_right         =      0.081000 ml
 middle_cerebral_M3_right         =      0.020250 ml
 middle_cerebral_M3_right         =      0.084375 ml
-middle_cerebral_M3_right         =      0.135000 ml
-middle_cerebral_M3_right         =      0.577124 ml
+middle_cerebral_M3_right         =      0.138375 ml
+middle_cerebral_M3_right         =      0.600749 ml
 prefrontal_left         =      0.199125 ml
-prefrontal_left         =      0.300375 ml
-prefrontal_right         =      0.435374 ml
+prefrontal_left         =      0.317250 ml
+prefrontal_right         =      0.458999 ml
 prefrontal_right         =      0.138375 ml
 anterior_temporal_left         =      0.081000 ml
 anterior_temporal_left         =      0.047250 ml
@@ -512,29 +515,29 @@ middle_temporal_right         =      0.141750 ml
 posterior_temporal_left         =      0.313875 ml
 posterior_temporal_right         =      0.415125 ml
 rolandic_left         =      0.182250 ml
-rolandic_right         =      0.472499 ml
-prerolandic_left         =      0.114750 ml
+rolandic_right         =      0.482624 ml
+prerolandic_left         =      0.121500 ml
 prerolandic_left         =      0.104625 ml
-prerolandic_left         =      0.253125 ml
-prerolandic_right         =      0.070875 ml
+prerolandic_left         =      0.256500 ml
+prerolandic_right         =      0.118125 ml
 prerolandic_right         =      0.202500 ml
-internal_carotid_left         =      2.494147 ml
-internal_carotid_right         =      7.263097 ml
+internal_carotid_left         =      3.699041 ml
+internal_carotid_right         =      8.224987 ml
 lateral_frontobasal_left         =      0.172125 ml
 lateral_frontobasal_right         =      0.111375 ml
 anterior_choroidal_left         =      0.124875 ml
 anterior_choroidal_right         =      0.084375 ml
-superior_saggital_sinus         =      7.047094 ml
+superior_saggital_sinus         =      7.499351 ml
 central_veins         =      0.131625 ml
-central_veins         =      0.216000 ml
-central_veins         =      0.216000 ml
-central_veins         =      0.651374 ml
-central_veins         =      0.668249 ml
+central_veins         =      0.371250 ml
+central_veins         =      0.388125 ml
+central_veins         =      0.664874 ml
+central_veins         =      0.715499 ml
 central_veins         =      0.195750 ml
-sigmoid_sinus_left         =      0.300375 ml
-sigmoid_sinus_right         =      0.718874 ml
-lateral_sinus_left         =      2.092516 ml
-lateral_sinus_right         =      3.337910 ml
+sigmoid_sinus_left         =      0.860624 ml
+sigmoid_sinus_right         =      1.292628 ml
+lateral_sinus_left         =      2.629149 ml
+lateral_sinus_right         =      3.810418 ml
 lateral_sinus_right         =      0.361125 ml
 straight_sinus         =      1.238627 ml
 parietal_superficial_veins         =      0.212625 ml
@@ -553,17 +556,17 @@ septal_vein_left         =      0.340875 ml
 septal_vein_right         =      0.050625 ml
 septal_vein_right         =      0.226125 ml
 septal_vein_right         =      0.145125 ml
-precentral_veins         =      0.128250 ml
+precentral_veins         =      0.151875 ml
 precentral_veins         =      0.148500 ml
-precentral_veins         =      0.111375 ml
+precentral_veins         =      0.145125 ml
 precentral_veins         =      0.097875 ml
-rlung         =   1376.188232 ml
-llung         =   1389.118408 ml
-liver         =   1773.633057 ml
+rlung         =   1369.745361 ml
+llung         =   1383.331787 ml
+liver         =   1773.075928 ml
 pancreas         =    138.257935 ml
-stomach         =    175.793808 ml
-esophagus         =     31.606321 ml
-laryngopharynx         =     15.953859 ml
+stomach         =    175.797180 ml
+esophagus         =     31.609695 ml
+laryngopharynx         =     15.970735 ml
 spleen         =    165.350128 ml
 gall_bladder         =     67.785858 ml
 r_adrenal         =      9.497382 ml
@@ -581,15 +584,17 @@ r_inf_parathyroid         =      0.027000 ml
 l_sup_parathyroid         =      0.060750 ml
 l_inf_parathyroid         =      0.016875 ml
 thymus         =     29.618977 ml
+pituitary_ant         =      0.698624 ml
+pituitary_post         =      0.216000 ml
 tonsils         =      1.987889 ml
 tonsils         =      2.028390 ml
 l_eye         =      1.613258 ml
-l_sclera         =      2.092516 ml
+l_sclera         =      2.095891 ml
 l_sclera         =      2.220768 ml
 l_cornea         =      0.614249 ml
 l_retina         =      0.887624 ml
 l_retina         =      1.066499 ml
-l_lens         =      0.330750 ml
+l_lens         =      0.327375 ml
 r_eye         =      1.684134 ml
 r_sclera         =      2.079015 ml
 r_sclera         =      2.085766 ml
@@ -601,7 +606,7 @@ r_lens         =      0.303750 ml
 ---------------------------------------- 
 
 Volume of LV myocardium =   110.376648 ml
-Volume of RV myocardium =    27.405567 ml
+Volume of RV myocardium =    27.402193 ml
 Volume of LA myocardium =     9.821387 ml
 Volume of RA myocardium =    13.122190 ml
 Volume of LV chamber    =   132.784866 ml
@@ -609,9 +614,9 @@ Volume of RV chamber    =   102.640839 ml
 Volume of LA chamber    =    35.971275 ml
 Volume of RA chamber    =    52.621742 ml
 ----------------------------------------
-Volume of TOTAL HEART   =   916.768212 ml
+Volume of TOTAL HEART   =   916.771587 ml
 
 Maximum activity per voxel =     113.000000
-Total activity = 440606368.807477
+Total activity = 476939105.000000
 
-Saving activity phantom in file : xcat_final.out_act_1
+Saving activity phantom in file : xcat_final_7.5.22.out_act_1

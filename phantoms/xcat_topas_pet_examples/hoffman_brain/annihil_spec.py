@@ -82,7 +82,7 @@ data = data.drop(0)
 # plots figure 1, the energy at decay
 plt.figure(1)
 fig1, ax1 = plt.subplots()
-ax1.hist(data['starte'], range=(0.0, 635.0), bins=1270, density=True, label='50,000 $e^+$ in\n0.5 keV bins')
+ax1.hist(data['starte'], range=(0.0, 636.0), bins=318, density=True, label='50,000 $e^+$ in\n2.0 keV bins')
 x = np.linspace(0.25, 635.0, 2539)
 def y(x):
     return ((-1.54629e-13)*((635.0-x)**2)*(x**2))/(1.0-math.exp(((18.0*math.pi)/137.0)*math.sqrt((2.0*x)/511.0)))
@@ -125,17 +125,18 @@ plt.savefig('xdist.png')
 
 plt.figure(2)
 fig2, ax2 = plt.subplots()
-ax2.hist(data['finale'], range=(0.0, 560.0), bins=56, label='50,000 $e^+$ in\n10 keV bins', density=True)
-#y_vals = ax2.get_yticks()
-#ax2.yaxis.set_major_locator(mticker.FixedLocator(y_vals))
-#ax2.set_yticklabels([f'{x:.2f}'.format(x * 10.0) for x in y_vals])
-plt.title('Probability Density of Kinetic Energies at Annihilation Point in the XCAT Brain', wrap=True)
+weights = np.ones_like(data['finale']) / len(data['finale'])
+ax2.hist(data['finale'], range=(0.0, 560.0), bins=56, label='50,000 $e^+$ in\n10 keV bins', weights=weights)
+ax2.annotate('49,584 $e^+$ at <10 keV', xy = (15, 0.1), 
+             fontsize = 11, xytext = (100, 0.2), 
+             arrowprops = dict(facecolor = 'black', width=1),
+             color = 'black')
+plt.title('Probability of Kinetic Energies at Annihilation Point in the XCAT Brain', wrap=True)
 plt.legend(loc='upper right')
 plt.yscale('log')
 plt.xticks()
 plt.minorticks_on()
-plt.ylabel('Probability (1/keV)')
-#plt.ylabel('Probability (per 10 keV bin)')
+plt.ylabel('Probability (per 10 keV bin)')
 plt.xlabel('Kinetic Energy (keV)')
 plt.savefig('finale_log.png')
 

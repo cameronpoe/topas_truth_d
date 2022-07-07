@@ -1,7 +1,7 @@
 import struct
 
 ## read in test binary
-binary = open("C:/Users/camer/xcat/xcat_final.out_act_1.bin", 'rb')
+binary = open("C:/Users/camer/frisch-research/xcat/xcat_final_7.5.22.out_act_1.bin", 'rb')
 out = open("binary.out", 'w')
 binary.seek(0,2) ## seeks to the end of the file (needed for getting number of bytes)
 num_bytes = binary.tell() ## how many bytes are in this file is stored as num_bytes
@@ -9,6 +9,7 @@ num_bytes = binary.tell() ## how many bytes are in this file is stored as num_by
 binary.seek(0) ## seeks back to beginning of file
 
 tissues_dict = {}
+total_voxels = 0
 
 i = 0 ## index of bytes we are on
 while i < num_bytes:
@@ -18,11 +19,14 @@ while i < num_bytes:
 
     if not activity in tissues_dict:
         tissues_dict[activity] = 1
+        total_voxels += 1
     else:
         tissues_dict[activity] += 1
+        total_voxels += 1
 
 for key, value in sorted(tissues_dict.items()):
     out.write(str(key) + ': ' + str(value) + '\n')
+out.write('Total voxels: %s'%str(total_voxels))
 
 binary.close()
 out.close()

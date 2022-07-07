@@ -186,7 +186,7 @@ li_air_flag = 5		# location of air in the large intestine see NOTE 6
 
 thickness_stomach = 0.7	# thickness of stomach wall (cm)
 thickness_esoph = 0.3	# thickness of the esophagus wall (cm)
-thickness_trachea = 0.0	# thickness of the trachea wall (cm)
+thickness_trachea = 0.3	# thickness of the trachea wall (cm)
 use_res = 0		# 0 = use high resolution to calc volumes, 1 = use pixel_width and slice_width below
 
 vol_prostate = 0.0	# set the volume of the prostate; (0 = do not change)
@@ -221,12 +221,12 @@ vol_epidy = 0.0		# set the volume of the epididymus; (0 = do not change)
 
 pixel_width = 0.15	# pixel width (cm);  see NOTE 7 
 slice_width = 0.15	# slice width (cm);   
-array_size = 256	# array size   
+array_size = 450	# array size   
 subvoxel_index = 1	# subvoxel_index (=1,2,3,4 -> 1,8,27,64 subvoxels/voxel, respectively) 
 startslice = 1	# start_slice;  
 				# CHANGED TO 1
 endslice = 1200		# end_slice; 
-					# CHANGED TO 1200
+					# CHANGED TO 1800
 
 d_ZY_rotation = 0	# change in zy_rotation (beta) in deg. (0); see NOTE 8
 d_XZ_rotation = 0	# change in xz_rotation ( phi) in deg. (0); 
@@ -240,7 +240,7 @@ activity_unit = 0	# activity units (1= scale by voxel volume (multiply activity 
 yellow_bone_marrow_activity = 1	# activity value for the yellow marrow
 								# CHANGED: MOVED FROM YELLOW MARROW SECTION
 
-myoLV_act = 2.001		# hrt_myoLV_act - activity in left ventricle myocardium
+myoLV_act = 2		# hrt_myoLV_act - activity in left ventricle myocardium
 myoRV_act = 3		# hrt_myoRV_act - activity in right ventricle myocardium
 myoLA_act = 4		# hrt_myoLA_act - activity in left atrium myocardium
 myoRA_act = 5		# hrt_myoRA_act - activity in right atrium myocardium
