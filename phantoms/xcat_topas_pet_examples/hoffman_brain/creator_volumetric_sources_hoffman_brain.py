@@ -127,7 +127,7 @@ def main():
 	XCAT_grey_matter_act = 33'''
 
 	#creates the blank topas parameter file
-	f = open(os.path.join(ROOT_DIR, 'volumetric_sources_hoffman_brain.topas'), 'w')
+	f = open(os.path.join(ROOT_DIR, 'vol_sources_8e8.topas'), 'w')
 
 	#writes initial comments
 	f.write('#this is a helper file composed of only volumetric sources over each of the XCAT phantom materials/tissues\n\n')
@@ -136,17 +136,14 @@ def main():
 	default_ratio = 0
 
 	#defines the volumes of the tissues
-	#uses average brain volume of 1510 mL for males 
-	#uses estimate for percentage of grey and white matter from paper by Luders 2002 Brain Size and Grey Matter Volume...
+	# uses tissue analysis by finding total number of voxels with each material and multiplying by volume of a voxel
 	volume_dict = {
 		"XCAT_white_matter_act": 618.732,
 		"XCAT_grey_matter_act": 256.80375
 	}
 
-	
-
 	#defines the time chunk over which the part of the scan takes place in seconds
-	time = .14
+	time = 60.0
 
 	activematerial_values = ""
 	numhistories_values = ""

@@ -1,0 +1,135 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d import proj3d
+from matplotlib.patches import FancyArrowPatch
+
+class Arrow3D(FancyArrowPatch):
+    def __init__(self, xs, ys, zs, *args, **kwargs):
+        FancyArrowPatch.__init__(self, (0,0), (0,0), *args, **kwargs)
+        self._verts3d = xs, ys, zs
+
+    def draw(self, renderer):
+        xs3d, ys3d, zs3d = self._verts3d
+        xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, renderer.M)
+        self.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+        FancyArrowPatch.draw(self, renderer)
+
+    def do_3d_projection(self, renderer=None):
+        xs3d, ys3d, zs3d = self._verts3d
+        xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, self.axes.M)
+        self.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+
+        return np.min(zs)
+
+
+def isolate_spots(filename, history, particle):
+    array_file = np.loadtxt(filename)
+    sub_tuples = np.delete(array_file[np.logical_and(array_file[:,0] == float(history), array_file[:,8] == float(particle))], [0, 7, 8], 1)
+    return sub_tuples
+
+def plot_gamma_path(path_tuple):
+    SMALL_SIZE = 10
+    LABEL_SIZE = 13.5
+    TICK_SIZE = 12.5
+    BIGGER_SIZE = 16
+
+    plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
+    plt.rc('axes', titlesize=LABEL_SIZE)     # fontsize of the axes title
+    plt.rc('axes', labelsize=BIGGER_SIZE)    # fontsize of the x and y labels
+    plt.rc('xtick', labelsize=TICK_SIZE)    # fontsize of the tick labels
+    plt.rc('ytick', labelsize=TICK_SIZE)    # fontsize of the tick labels
+
+    fig = plt.figure()
+    ax = plt.axes(projection='3d')
+    e_dep = path_tuple[:, 1]
+    xdata = path_tuple[:, 2]
+    ydata = path_tuple[:, 3]
+    zdata = path_tuple[:, 4]
+    energydata = path_tuple[:, 0]
+    ax.set_title('Gamma position in detector', fontdict = {'fontsize' : 18}, wrap=True, pad=-100)
+    ax.set_xlabel('x position (cm)')
+    ax.set_ylabel('y position (cm)')
+    ax.set_zlabel('z position (cm)')
+    ax.tick_params(axis='x', which='major', pad=-1)
+    ax.tick_params(axis='y', which='major', pad=-1)
+    ax.tick_params(axis='z', which='major', pad=0)
+    plt.locator_params(nbins=6)
+
+    energy_deposits = []
+    i = 0
+    while i < len(energydata)-1:
+        energy_deposits.append([str(i+1), str(energydata[i]-energydata[i+1])])
+        i += 1
+    print(energy_deposits)
+    
+    
+    for i in range(len(xdata)-1):
+        ax.scatter3D(xdata[i+1], ydata[i+1], zdata[i+1], depthshade=True, c='Blue') 
+        #ax.text(xdata[i+1], ydata[i+1], zdata[i+1],  '%s' % (str(i+1)), size=13, zorder=1, color='Red') 
+
+    ax.text(xdata[1]-.5, ydata[1], zdata[1]+.25,  '1', size=13, zorder=1, color='Red')
+    ax.text(xdata[2], ydata[2], zdata[2]+.5,  '2, 3', size=13, zorder=1, color='Red') 
+    ax.text(xdata[4], ydata[4], zdata[4]+.5,  '4, 5', size=13, zorder=1, color='Red')
+    ax.text(xdata[6]-1.6, ydata[6], zdata[6]-.25,  '6', size=13, zorder=1, color='Red')
+    ax.text(xdata[7], ydata[7], zdata[7]+.3,  '7', size=13, zorder=1, color='Red')
+    ax.text(xdata[8], ydata[8], zdata[8]-1.5,  '8, 9', size=13, zorder=1, color='Red')
+    ax.text(xdata[10]+.5, ydata[10], zdata[10]-.5,  '10', size=13, zorder=1, color='Red')
+    ax.text(xdata[11], ydata[11], zdata[11]+.5,  '11', size=13, zorder=1, color='Red')
+
+    #ax.scatter3D(xdata, ydata, zdata, depthshade=True, c='Green')
+    ax.plot(xdata[1:], ydata[1:], zdata[1:], color='Blue', alpha=.3)
+
+    arw = Arrow3D([xdata[0],xdata[1]],[ydata[0],ydata[1]],[zdata[0],zdata[1]], arrowstyle="-|>", color="#e610c5", lw = 2, mutation_scale=25)
+    ax.add_artist(arw)
+    #ax.quiver(xdata[0], ydata[0], zdata[0], xdata[1]-xdata[0], ydata[1]-ydata[0], zdata[1]-zdata[0], color = 'orange', alpha = 1, lw = 4)
+
+    plt.show()
+    return
+
+def plot_electron_path(path_tuple):
+    SMALL_SIZE = 10
+    LABEL_SIZE = 13.5
+    TICK_SIZE = 12.5
+    BIGGER_SIZE = 16
+
+    plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
+    plt.rc('axes', titlesize=LABEL_SIZE)     # fontsize of the axes title
+    plt.rc('axes', labelsize=BIGGER_SIZE)    # fontsize of the x and y labels
+    plt.rc('xtick', labelsize=TICK_SIZE)    # fontsize of the tick labels
+    plt.rc('ytick', labelsize=TICK_SIZE)    # fontsize of the tick labels
+    fig = plt.figure()
+    ax = plt.axes(projection='3d')
+    xdata = (path_tuple[:, 2] - path_tuple[:, 2][0])*10000
+    ydata = (path_tuple[:, 3] - path_tuple[:, 3][0])*-10000
+    zdata = (path_tuple[:, 4] - path_tuple[:, 4][0])*10000
+    initial_position = (xdata[0], ydata[0], zdata[0])
+    ax.set_title('Electron displacement from initial scatter', fontdict = {'fontsize' : 18}, wrap=True, pad=-100)
+    ax.set_xlabel('x position (\u03BCm)')
+    ax.set_ylabel('y position (\u03BCm)')
+    ax.set_zlabel('z position (\u03BCm)')
+    ax.tick_params(axis='x', which='major', pad=-5)
+    ax.tick_params(axis='y', which='major', pad=-5)
+    ax.tick_params(axis='z', which='major', pad=0)
+    plt.locator_params(nbins=6)
+    #plt.locator_params(['x', 'z'], nbins=6)
+    #plt.locator_params(['y'], nbins=4)
+
+    ax.plot(xdata, ydata, zdata, color='Green')
+    ax.text(xdata[0], ydata[0]+25, zdata[0]+18,  'Start', size=16, zorder=1,  
+    color='Black') 
+    ax.text(xdata[-1], ydata[-1], zdata[-1]+5,  'End', size=16, zorder=1,  
+    color='Black') 
+
+    plt.show()
+
+    return
+
+def main():
+    gamma_sub_tuples = isolate_spots(r"C:\Users\camer\topaspet-github\topas_truth_d\phantoms\xcat_topas_pet_examples\DetectorTuple-Gamma.phsp", 0, 3)
+    electron_sub_tuples = isolate_spots(r"C:\Users\camer\topaspet-github\topas_truth_d\phantoms\xcat_topas_pet_examples\DetectorTuple-HighEnergyElectron.phsp", 0, 4)
+    plot_gamma_path(gamma_sub_tuples)
+    #plot_electron_path(electron_sub_tuples)
+
+if __name__ == '__main__':
+    main()

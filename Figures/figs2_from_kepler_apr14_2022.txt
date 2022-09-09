@@ -1,0 +1,45 @@
+From domuratsousa@uchicago.edu Thu Apr 14 15:20:13 2022
+Date: Thu, 14 Apr 2022 15:20:04
+From: Kepler Domurat-Sousa <domuratsousa@uchicago.edu>
+To: Henry Frisch <frisch@hep.uchicago.edu>, Cameron Poe <cameronpoe@uchicago.edu>, Ev Sun <evsun@uchicago.edu>
+Subject: Subfigures for figure 2 of the TOPAS paper
+
+Hi all,
+
+Here are some relatively nice looking subfigures for figure 2. They likely need
+to go through at least one more round of revisions before we are done with them.
+
+Cheers, Kepler
+
+
+
+
+
+    [ Part 2, "energies_of_escapes.png"  Image/PNG (Name: ]
+    [ "energies_of_escapes.png") 99 KB. ]
+    [ Unable to print this part. ]
+
+
+    [ Part 3, "energy_deposited_in_highest_energy_scatter.png"  Image/PNG ]
+    [ (Name: "energy_deposited_in_highest_energy_scatter.png") 32 KB. ]
+    [ Unable to print this part. ]
+
+
+    [ Part 4, "first_scatter_energy_by_angle.png"  Image/PNG (Name: ]
+    [ "first_scatter_energy_by_angle.png") 183 KB. ]
+    [ Unable to print this part. ]
+
+
+    [ Part 5, "highest_energy_scatter.png"  Image/PNG (Name: ]
+    [ "highest_energy_scatter.png") 71 KB. ]
+    [ Unable to print this part. ]
+
+
+    [ Part 6, "scatter_distance_in_water.png"  Image/PNG (Name: ]
+    [ "scatter_distance_in_water.png") 67 KB. ]
+    [ Unable to print this part. ]
+
+
+    [ Part 7, "scatters_before_escape.png"  Image/PNG (Name: ]
+    [ "scatters_before_escape.png") 44 KB. ]
+    [ Unable to print this part. ]
